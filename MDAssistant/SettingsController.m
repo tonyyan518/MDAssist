@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "SettingsController.h"
 
-@interface SecondViewController () <UITextFieldDelegate>
+@interface SettingsController () <UITextFieldDelegate>
 
 @end
 
-@implementation SecondViewController
+@implementation SettingsController
 @synthesize nameText = _nameText;
 @synthesize uniqueIDText = _uniqueIDText;
 @synthesize cellNumberText = _cellNumberText;
@@ -23,8 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
+    //enable scrolling
+    [self.inputScroll setScrollEnabled:YES];
+    [self.inputScroll setContentSize:CGSizeMake(320,1000)];
+    
+    
+    //load the previous settings
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *loadString = [defaults objectForKey:@"savedName"];
     [self.nameText setText:loadString];
@@ -70,6 +75,8 @@
 
 - (IBAction)textfieldReturn:(id)sender {
     [sender resignFirstResponder];
+    CGPoint offset = CGPointMake(0, 0);
+    [self.inputScroll setContentOffset:offset animated:YES];
 }
 
 - (IBAction)saveData:(id)sender {
@@ -99,11 +106,6 @@
     float xOrigin = 0;
     float yOrigin = [textField frame].origin.y;
     CGPoint offset = CGPointMake(xOrigin, yOrigin);
-    [self.inputScroll setContentOffset:offset animated:YES];
-}
-
-- (void) textfieldReturn:(id)sender:(UITextField *)textField {
-    CGPoint offset = CGPointMake(0, 0);
     [self.inputScroll setContentOffset:offset animated:YES];
 }
 
