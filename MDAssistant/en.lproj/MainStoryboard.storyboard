@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11G56" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
+>>>>>>> d18f05229a7c7193119bd0a3d183adffa6a5b3dd
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--First View Controller - First-->
         <scene sceneID="11">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
                 <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -228,6 +230,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="lPl-z7-aNF" kind="push" id="uSK-6f-OaH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LUF-gV-bDh">
                                 <rect key="frame" x="16" y="73" width="67" height="24"/>
@@ -247,14 +252,63 @@
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="7"/>
                     <navigationItem key="navigationItem" title="Home" id="Huh-JI-rL4"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="430" y="310"/>
         </scene>
+<<<<<<< HEAD
         <!--Settings Controller - Second-->
         <scene sceneID="13">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
                 <viewController title="Second" id="3" customClass="SettingsController" sceneMemberID="viewController">
+=======
+        <!--Pager View Controller - PagerViewController-->
+        <scene sceneID="hH9-E6-i3H">
+            <objects>
+                <viewController title="PagerViewController" id="lPl-z7-aNF" customClass="PagerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HPR-Vp-uDl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="74y-dO-OL6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCcell" id="BzH-RW-KFp">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="lPl-z7-aNF" id="VWa-R1-7iV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Paging" id="7oM-Yx-3eH">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="YFB-q4-FPE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="PagerViewController" destination="HPR-Vp-uDl" id="WHp-iH-BPZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ue-mp-9Yv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="933"/>
+        </scene>
+        <!--Second View Controller - Second-->
+        <scene sceneID="13">
+            <objects>
+                <viewController title="Second" id="3" customClass="SecondViewController" sceneMemberID="viewController">
+>>>>>>> d18f05229a7c7193119bd0a3d183adffa6a5b3dd
                     <view key="view" contentMode="scaleToFill" id="17" customClass="UIControl">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -368,13 +422,17 @@
                         <outlet property="uniqueIDText" destination="n0L-IG-U2Y" id="zK8-Ra-YkT"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="912" y="310"/>
+=======
+            <point key="canvasLocation" x="1218" y="338"/>
+>>>>>>> d18f05229a7c7193119bd0a3d183adffa6a5b3dd
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XOQ-gC-ffc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oTN-nW-dnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="8bG-W3-u5u" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SMs-w4-7zb">
                         <autoresizingMask key="autoresizingMask"/>
@@ -384,6 +442,7 @@
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="9nx-rc-RIb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTN-nW-dnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-54" y="310"/>
         </scene>
@@ -414,6 +473,35 @@
         <image name="second" width="16" height="16"/>
         <image name="system_help.png" width="128" height="128"/>
     </resources>
+<<<<<<< HEAD
+=======
+    <classes>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+        </class>
+        <class className="PagerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="PagerViewController" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="SecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
+                <relationship kind="action" name="loadData:"/>
+                <relationship kind="action" name="saveData:"/>
+                <relationship kind="action" name="textfieldReturn:"/>
+                <relationship kind="outlet" name="cellNumberText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="emailText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="inputScroll" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="nameText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pagerNumberText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="uniqueIDText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+>>>>>>> d18f05229a7c7193119bd0a3d183adffa6a5b3dd
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
