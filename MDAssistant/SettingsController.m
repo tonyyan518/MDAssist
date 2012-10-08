@@ -104,7 +104,8 @@
 
 - (void) textFieldDidBeginEditing:(UITextField *)textField {
     float xOrigin = 0;
-    float yOrigin = [textField frame].origin.y;
+    float yOrigin = [textField frame].origin.y - 50;
+    if (yOrigin < 0) yOrigin = 0;
     CGPoint offset = CGPointMake(xOrigin, yOrigin);
     [self.inputScroll setContentOffset:offset animated:YES];
 }
