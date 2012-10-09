@@ -51,6 +51,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5yh-4x-CcV" kind="push" id="VA8-tE-rST"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uMQ-jG-euN">
                                 <rect key="frame" x="238" y="147" width="50" height="50"/>
@@ -223,6 +226,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="426" y="258"/>
+        </scene>
+        <!--Schedule Controller-->
+        <scene sceneID="thH-Pd-M0T">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8I-v0-kKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="5yh-4x-CcV" customClass="ScheduleController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PLh-aU-kic">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="m0V-ko-Leh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oAu-dW-Jeg"/>
+                    <connections>
+                        <outlet property="scheduleView" destination="m0V-ko-Leh" id="O6I-o2-2ZP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="938" y="258"/>
         </scene>
         <!--View Controller - Handbook-->
         <scene sceneID="tRQ-FX-Kj0">
@@ -451,6 +479,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="PagerViewController" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="ScheduleController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scheduleView" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="SettingsController" superclassName="UIViewController">
