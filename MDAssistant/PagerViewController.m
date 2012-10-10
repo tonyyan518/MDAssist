@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR",  @"Sign back to on page"  @"Refer to Cell Phone", @"Extra", @"Extra2", nil];
+    options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR",  @"Sign back to on page",  @"Refer to Cell Phone", nil];
 }
 
 - (void)didReceiveMemoryWarning
