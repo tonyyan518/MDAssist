@@ -7,18 +7,16 @@
 //
 
 #import "PagerViewController.h"
-#import "CallController.h"
+#import "ORController.h"
 
 @interface PagerViewController ()
 
 @end
 
 @implementation PagerViewController
-{
     NSArray *options;
-    CallController *caller;
+    ORController *caller;
 
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -72,15 +70,5 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (caller == nil) {
-        CallController *aController = [[CallController alloc] initWithNibName:
-                                       @"DetailViewController" bundle:nil];
-        self.caller = aController;
-    }
-    [caller updateRowNumber:indexPath.row];
-    [[self navigationController] pushViewController:caller animated:YES];
-}
 
 @end

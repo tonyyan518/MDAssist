@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class CallController;
+@class ORController;
 
 @interface PagerViewController : UIViewController 
 @property (strong, nonatomic) IBOutlet UIView *PagerViewController;
-@property (nonatomic, retain) CallController *caller;
+@property (nonatomic, retain) ORController *caller;
 
 @end

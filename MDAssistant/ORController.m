@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "CallController.h"
+#import "ORController.h"
 
-@interface CallController ()
+@interface ORController ()
 
 @end
 
-@implementation CallController
+@implementation ORController
 @synthesize message, rowNumber;
 
     NSArray * options;
@@ -26,16 +26,10 @@
     return self;
 }
 
--(void)updateRowNumber:(int)theindex {
-    rowNumber = theindex + 1;
-    message.text = [NSString stringWithFormat:@"row %i was clicked", rowNumber];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    message.text = [NSString stringWithFormat:@"row %i was clicked", rowNumber];
     options = [NSArray arrayWithObjects:@"OR 1", @"OR 2",  @"OR 3", @"OR 4", @"OR 5", @"OR 6", @"OR 7", @"OR 8", @"OR 9", @"OR 10", @"OR 11", @"OR 12", @"OR 13", @"OR 14", @"OR 15", @"OR 16", @"OR 17",@"L&D OR 1",@"L&D OR 2", nil];
 
 }

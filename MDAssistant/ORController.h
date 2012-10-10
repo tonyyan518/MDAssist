@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CallController : UIViewController {
+@interface ORController : UIViewController {
     int rowNumber;
     IBOutlet UILabel *message;
 }
