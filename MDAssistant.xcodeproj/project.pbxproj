@@ -54,6 +54,7 @@
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31A5B7101622170C00B6ECCA /* Resident Handbook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70F1622170C00B6ECCA /* Resident Handbook.pdf */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
+		31F5837E1624E5C2007359A8 /* CallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F5837D1624E5C2007359A8 /* CallController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,8 @@
 		31A5B70F1622170C00B6ECCA /* Resident Handbook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Resident Handbook.pdf"; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		31F5837C1624E5C2007359A8 /* CallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallController.h; sourceTree = "<group>"; };
+		31F5837D1624E5C2007359A8 /* CallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				31A5B70B1622110F00B6ECCA /* PagerViewController.m */,
 				31A5B70A1622110200B6ECCA /* PagerViewController.h */,
 				31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */,
+				31F5837C1624E5C2007359A8 /* CallController.h */,
+				31F5837D1624E5C2007359A8 /* CallController.m */,
 				31122EA51624C4BD0052590F /* ScheduleController.h */,
 				31122EA61624C4BD0052590F /* ScheduleController.m */,
 				31058A2C1607F83900A9AC72 /* AppDelegate.h */,
@@ -334,6 +339,7 @@
 				31A5B70C1622110F00B6ECCA /* PagerViewController.m in Sources */,
 				31F564D7162228E300D59659 /* PDFViewController.m in Sources */,
 				31122EA71624C4BD0052590F /* ScheduleController.m in Sources */,
+				31F5837E1624E5C2007359A8 /* CallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
