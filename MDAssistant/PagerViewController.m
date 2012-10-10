@@ -7,15 +7,16 @@
 //
 
 #import "PagerViewController.h"
+#import "CallController.h"
 
 @interface PagerViewController ()
 
 @end
 
 @implementation PagerViewController
-
 {
     NSArray *options;
+    CallController *caller;
 
 }
 
@@ -32,7 +33,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-  options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR", @"Sign back to on page", @"Refer to Cell Phone", @"Extra", @"Extra2", nil];
+    options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR",  @"Sign back to on page"  @"Refer to Cell Phone", @"Extra", @"Extra2", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,6 +63,17 @@
     
     cell.textLabel.text = [options objectAtIndex:indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (caller == nil) {
+        CallController *aController = [[CallController alloc] initWithNibName:
+                                       @"DetailViewController" bundle:nil];
+        self.caller = aController;
+    }
+    [caller updateRowNumber:indexPath.row];
+    [[self navigationController] pushViewController:caller animated:YES];
 }
 
 @end
