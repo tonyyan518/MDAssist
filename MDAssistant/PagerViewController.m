@@ -53,8 +53,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"CCcell";
-    
+    static NSString *simpleTableIdentifier;
+    static NSString *tableID;
+    tableID = [options objectAtIndex:indexPath.row];
+    if ([tableID isEqualToString:@"Signout to OR"]) {
+        simpleTableIdentifier = @"CCcell";
+    }
+    else{
+      simpleTableIdentifier = @"RCcell";
+    }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
