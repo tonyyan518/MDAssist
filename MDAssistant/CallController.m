@@ -42,7 +42,13 @@
 }
 
 -(IBAction)callPhone:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:2066535599"]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *uniqueID = [defaults objectForKey:@"savedID"];
+    
+    NSString *backOnPage = [NSString stringWithFormat:@"%@,,*#,%@,12", pagerNum, uniqueID];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:backOnPage]];
 }
 
 @end
