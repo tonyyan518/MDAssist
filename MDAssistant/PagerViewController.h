@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class ORController;
 
 @interface PagerViewController : UIViewController 
 @property (strong, nonatomic) IBOutlet UIView *PagerViewController;
-
 @end
