@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
@@ -225,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="-546"/>
+            <point key="canvasLocation" x="-58" y="-546"/>
         </scene>
         <!--Schedule Controller-->
         <scene sceneID="thH-Pd-M0T">
@@ -277,6 +276,48 @@
             </objects>
             <point key="canvasLocation" x="1032" y="-197"/>
         </scene>
+        <!--Cross Cover Controller - Cross Cover-->
+        <scene sceneID="bow-Lw-LOL">
+            <objects>
+                <viewController id="q2G-7Y-kap" customClass="CrossCoverController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8eG-ar-xpE">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="0Ur-2k-wiI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CrCocell" id="U4u-rq-f7c">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="Wr0-zu-jke" kind="push" id="bAi-ou-Ksf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="q2G-7Y-kap" id="OPr-wQ-N2l"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cross Cover" id="wYM-a6-otC"/>
+                    <connections>
+                        <outlet property="CrossCover" destination="0Ur-2k-wiI" id="NpI-Qj-hPa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyZ-91-q07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="-1897"/>
+        </scene>
         <!--Pager View Controller - PagerViewController-->
         <scene sceneID="hH9-E6-i3H">
             <objects>
@@ -290,28 +331,43 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCcell" id="eLR-3A-e6j">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCcell" rowHeight="69" id="Vvn-lh-ZlM">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <rect key="frame" x="10" y="1" width="280" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="1.3877787807814457e-17" width="1" height="1"/>
                                         <connections>
-                                            <segue destination="emf-2T-bXX" kind="push" id="0xI-pl-mbz"/>
+                                            <segue destination="q2G-7Y-kap" kind="push" id="8gi-cV-B3k"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RCcell" id="IlB-GO-Acf">
-                                        <rect key="frame" x="0.0" y="91" width="320" height="45"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ORcell" rowHeight="69" id="eLR-3A-e6j">
+                                        <rect key="frame" x="0.0" y="116" width="320" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <rect key="frame" x="10" y="0.0" width="280" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="1.3877787807814457e-17" width="1" height="1"/>
                                         <connections>
-                                            <segue destination="Wr0-zu-jke" kind="push" id="3o2-xb-BDb"/>
+                                            <segue destination="emf-2T-bXX" kind="push" id="G5P-JA-mlm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RCcell" rowHeight="69" id="ma8-hg-cW2">
+                                        <rect key="frame" x="0.0" y="185" width="320" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="1.3877787807814457e-17" width="1" height="1"/>
+                                        <connections>
+                                            <segue destination="Wr0-zu-jke" kind="push" id="5im-ea-yiK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -331,12 +387,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ue-mp-9Yv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="-1205"/>
+            <point key="canvasLocation" x="471" y="-1427"/>
         </scene>
-        <!--Controller-->
+        <!--Controller - ORController-->
         <scene sceneID="U7O-4O-pMY">
             <objects>
-                <viewController id="emf-2T-bXX" customClass="ORController" sceneMemberID="viewController">
+                <viewController title="ORController" id="emf-2T-bXX" customClass="ORController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ewI-Gh-E39">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -366,11 +422,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="POF-Wn-mEy"/>
+                    <navigationItem key="navigationItem" title="OR" id="POF-Wn-mEy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhW-wB-o1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1119" y="-1427"/>
+            <point key="canvasLocation" x="1140" y="-993"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dzd-aw-0ZL">
@@ -406,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jt0-DK-yQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="-1241"/>
+            <point key="canvasLocation" x="1792" y="-1439"/>
         </scene>
         <!--Settings Controller - Second-->
         <scene sceneID="13">
@@ -558,12 +614,59 @@
         <image name="settings.png" width="128" height="128"/>
         <image name="system_help.png" width="128" height="128"/>
     </resources>
+    <classes>
+        <class className="CrossCoverController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrossCoverController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="CrossCover" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ORController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ORController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="message" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="PDFViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PDFViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pdfView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="PagerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="PagerViewController" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="ScheduleController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scheduleView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="SettingsController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsController.h"/>
+            <relationships>
+                <relationship kind="action" name="backgroundTouched:"/>
+                <relationship kind="action" name="loadData:"/>
+                <relationship kind="action" name="saveData:"/>
+                <relationship kind="action" name="textfieldReturn:"/>
+                <relationship kind="outlet" name="cellNumberText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="emailText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="inputScroll" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="nameText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pagerNumberText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="uniqueIDText" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gva-2W-Ywv"/>
+        <segue reference="5im-ea-yiK"/>
     </inferredMetricsTieBreakers>
 </document>
