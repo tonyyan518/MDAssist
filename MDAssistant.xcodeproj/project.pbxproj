@@ -49,6 +49,7 @@
 		31058ABE16175CFA00A9AC72 /* symbol_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9C16175CFA00A9AC72 /* symbol_check.png */; };
 		31058ABF16175CFA00A9AC72 /* system_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9D16175CFA00A9AC72 /* system_help.png */; };
 		31122EA71624C4BD0052590F /* ScheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31122EA61624C4BD0052590F /* ScheduleController.m */; };
+		314ED6D3162F61E2001A6F01 /* CallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6D1162F61E2001A6F01 /* CallController.m */; };
 		31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */; };
 		31A5B70C1622110F00B6ECCA /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A5B70B1622110F00B6ECCA /* PagerViewController.m */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
@@ -108,6 +109,8 @@
 		31058A9D16175CFA00A9AC72 /* system_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = system_help.png; sourceTree = "<group>"; };
 		31122EA51624C4BD0052590F /* ScheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleController.h; sourceTree = "<group>"; };
 		31122EA61624C4BD0052590F /* ScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleController.m; sourceTree = "<group>"; };
+		314ED6D0162F61E2001A6F01 /* CallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallController.h; sourceTree = "<group>"; };
+		314ED6D1162F61E2001A6F01 /* CallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallController.m; sourceTree = "<group>"; };
 		31A5B70816220E5200B6ECCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MDAssistant/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		31A5B70A1622110200B6ECCA /* PagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
 		31A5B70B1622110F00B6ECCA /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				31F564D6162228E300D59659 /* PDFViewController.m */,
 				CE1B916D162F5250001E30EC /* CrossCoverController.h */,
 				CE1B916E162F5250001E30EC /* CrossCoverController.m */,
+				314ED6D0162F61E2001A6F01 /* CallController.h */,
+				314ED6D1162F61E2001A6F01 /* CallController.m */,
 			);
 			path = MDAssistant;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				31122EA71624C4BD0052590F /* ScheduleController.m in Sources */,
 				31F5837E1624E5C2007359A8 /* ORController.m in Sources */,
 				CE1B916F162F5250001E30EC /* CrossCoverController.m in Sources */,
+				314ED6D3162F61E2001A6F01 /* CallController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
