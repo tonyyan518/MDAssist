@@ -7,12 +7,13 @@
 //
 
 #import "PagerViewController.h"
+#import "ORController.h"
 
 @interface PagerViewController ()
 
 @end
 
-@implementation PagerViewController
+@implementation PagerViewController {
     NSArray *options;
 }
 
