@@ -11,6 +11,5 @@
 
 @interface PagerViewController : UIViewController 
 @property (strong, nonatomic) IBOutlet UIView *PagerViewController;
-@property (nonatomic, retain) ORController *caller;
 
 @end

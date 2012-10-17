@@ -1,20 +1,20 @@
 //
-//  PagerViewController.m
+//  CrossCoverController.m
 //  MDAssistant
 //
-//  Created by Leo on 9/29/12.
+//  Created by Leo on 10/17/12.
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "PagerViewController.h"
-#import "ORController.h"
+#import "CrossCoverController.h"
 
-@interface PagerViewController ()
+@interface CrossCoverController ()
 
 @end
 
-@implementation PagerViewController
+@implementation CrossCoverController
     NSArray *options;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR",  @"Sign back to on page",  @"Refer to Cell Phone", nil];
+    options = [NSArray arrayWithObjects:@"ONC", @"GYN",  @"CONSULT",  @"URO", @"ANTE", @"REL",nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,10 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidUnload {
-    [self setPagerViewController:nil];
-    [super viewDidUnload];
-}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [options count];
@@ -50,17 +46,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier;
-    static NSString *tableID;
-    tableID = [options objectAtIndex:indexPath.row];
-    if ([tableID isEqualToString:@"Signout to OR"]) {
-        simpleTableIdentifier = @"ORcell";
-    }
-    else if ([tableID isEqualToString:@"Cross Cover"]) {
-        simpleTableIdentifier = @"CCcell";
-    }
-    else{
-      simpleTableIdentifier = @"RCcell";
-    }
+    
+    simpleTableIdentifier = @"CrCocell";
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
@@ -71,5 +59,8 @@
     return cell;
 }
 
-
+- (void)viewDidUnload {
+    [self setCrossCover:nil];
+    [super viewDidUnload];
+}
 @end

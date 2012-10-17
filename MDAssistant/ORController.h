@@ -15,5 +15,4 @@
 
 @property(readwrite) int rowNumber;
 @property(nonatomic, retain) IBOutlet UILabel *message;
--(void)updateRowNumber:(int)theindex;
 @end
