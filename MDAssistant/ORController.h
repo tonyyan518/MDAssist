@@ -1,18 +1,13 @@
 //
-//  CallController.h
+//  ORController.h
 //  MDAssistant
 //
-//  Created by guest user on 10/9/12.
+//  Created by guest user on 10/18/12.
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ORController : UIViewController {
-    int rowNumber;
-    IBOutlet UILabel *message;
-}
+@interface ORController : UITableViewController
 
-@property(readwrite) int rowNumber;
-@property(nonatomic, retain) IBOutlet UILabel *message;
 @end

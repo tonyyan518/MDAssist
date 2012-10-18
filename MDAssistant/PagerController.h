@@ -1,5 +1,5 @@
 //
-//  CrossCoverController.h
+//  PagerController.h
 //  MDAssistant
 //
 //  Created by guest user on 10/18/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CrossCoverController : UITableViewController
+@interface PagerController : UITableViewController
 
 @end

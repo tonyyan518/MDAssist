@@ -1,18 +1,18 @@
 //
-//  PDFViewController.m
+//  HomeController.m
 //  MDAssistant
 //
-//  Created by guest user on 10/7/12.
+//  Created by guest user on 10/18/12.
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "PDFViewController.h"
+#import "HomeController.h"
 
-@interface PDFViewController ()
+@interface HomeController ()
 
 @end
 
-@implementation PDFViewController
+@implementation HomeController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,15 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *loadString = [defaults objectForKey:@"fileName"];
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:loadString ofType:@"pdf"];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [pdfView loadRequest:request];
-    [pdfView setScalesPageToFit:YES];
-
 }
 
 - (void)viewDidUnload
@@ -47,6 +38,18 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)openHandbook:(id)sender {
+    NSString *fileName = @"Resident Handbook";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:fileName forKey:@"fileName"];
+}
+
+- (IBAction)openDictation:(id)sender {
+    NSString *fileName = @"Dictation Templates";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:fileName forKey:@"fileName"];
 }
 
 @end

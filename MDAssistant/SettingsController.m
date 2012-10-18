@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    //[super viewDidLoad];
     
     //enable scrolling
     [self.inputScroll setScrollEnabled:YES];
@@ -110,10 +110,11 @@
     [self.inputScroll setContentOffset:offset animated:YES];
 }
 
--(NSString*) saveFilePath{
+- (NSString*) saveFilePath{
     NSString* path = [NSString stringWithFormat:@"%@%@",
                       [[NSBundle mainBundle] resourcePath],
                       @"settings.plist"];
-    return path;}
+    return path;
+}
 
 @end

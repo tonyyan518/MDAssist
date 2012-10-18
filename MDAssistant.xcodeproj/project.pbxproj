@@ -50,14 +50,16 @@
 		31058ABF16175CFA00A9AC72 /* system_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9D16175CFA00A9AC72 /* system_help.png */; };
 		31122EA71624C4BD0052590F /* ScheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31122EA61624C4BD0052590F /* ScheduleController.m */; };
 		314ED6D3162F61E2001A6F01 /* CallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6D1162F61E2001A6F01 /* CallController.m */; };
+		314ED6D7162F96D3001A6F01 /* Resident Handbook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 314ED6D6162F96D3001A6F01 /* Resident Handbook.pdf */; };
+		314ED6D9162F96EC001A6F01 /* Dictation Templates.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 314ED6D8162F96EC001A6F01 /* Dictation Templates.pdf */; };
+		314ED6DC1630A2DA001A6F01 /* PagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6DB1630A2D9001A6F01 /* PagerController.m */; };
+		314ED6E21630ADE5001A6F01 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6E11630ADE5001A6F01 /* HomeController.m */; };
+		314ED6E51630B192001A6F01 /* ORController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6E41630B192001A6F01 /* ORController.m */; };
+		314ED6E81630B1AC001A6F01 /* CrossCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6E71630B1AC001A6F01 /* CrossCoverController.m */; };
 		31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */; };
-		31A5B70C1622110F00B6ECCA /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A5B70B1622110F00B6ECCA /* PagerViewController.m */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
-		31A5B7101622170C00B6ECCA /* Resident Handbook.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70F1622170C00B6ECCA /* Resident Handbook.pdf */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
-		31F5837E1624E5C2007359A8 /* ORController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F5837D1624E5C2007359A8 /* ORController.m */; };
 		CE1B916B162F4EF6001E30EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1B916A162F4EF6001E30EC /* Default-568h@2x.png */; };
-		CE1B916F162F5250001E30EC /* CrossCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1B916E162F5250001E30EC /* CrossCoverController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,18 +113,21 @@
 		31122EA61624C4BD0052590F /* ScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleController.m; sourceTree = "<group>"; };
 		314ED6D0162F61E2001A6F01 /* CallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallController.h; sourceTree = "<group>"; };
 		314ED6D1162F61E2001A6F01 /* CallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallController.m; sourceTree = "<group>"; };
+		314ED6D6162F96D3001A6F01 /* Resident Handbook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Resident Handbook.pdf"; sourceTree = "<group>"; };
+		314ED6D8162F96EC001A6F01 /* Dictation Templates.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Dictation Templates.pdf"; sourceTree = "<group>"; };
+		314ED6DA1630A2D9001A6F01 /* PagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerController.h; sourceTree = "<group>"; };
+		314ED6DB1630A2D9001A6F01 /* PagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerController.m; sourceTree = "<group>"; };
+		314ED6E01630ADE5001A6F01 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = ../HomeController.h; sourceTree = "<group>"; };
+		314ED6E11630ADE5001A6F01 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = ../HomeController.m; sourceTree = "<group>"; };
+		314ED6E31630B191001A6F01 /* ORController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORController.h; sourceTree = "<group>"; };
+		314ED6E41630B192001A6F01 /* ORController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORController.m; sourceTree = "<group>"; };
+		314ED6E61630B1AC001A6F01 /* CrossCoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossCoverController.h; sourceTree = "<group>"; };
+		314ED6E71630B1AC001A6F01 /* CrossCoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossCoverController.m; sourceTree = "<group>"; };
 		31A5B70816220E5200B6ECCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MDAssistant/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		31A5B70A1622110200B6ECCA /* PagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
-		31A5B70B1622110F00B6ECCA /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
-		31A5B70F1622170C00B6ECCA /* Resident Handbook.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Resident Handbook.pdf"; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
-		31F5837C1624E5C2007359A8 /* ORController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORController.h; sourceTree = "<group>"; };
-		31F5837D1624E5C2007359A8 /* ORController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORController.m; sourceTree = "<group>"; };
 		CE1B916A162F4EF6001E30EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CE1B916D162F5250001E30EC /* CrossCoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossCoverController.h; sourceTree = "<group>"; };
-		CE1B916E162F5250001E30EC /* CrossCoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossCoverController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,11 +175,15 @@
 		31058A231607F83900A9AC72 /* MDAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				31A5B70B1622110F00B6ECCA /* PagerViewController.m */,
-				31A5B70A1622110200B6ECCA /* PagerViewController.h */,
+				314ED6E01630ADE5001A6F01 /* HomeController.h */,
+				314ED6E11630ADE5001A6F01 /* HomeController.m */,
 				31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */,
-				31F5837C1624E5C2007359A8 /* ORController.h */,
-				31F5837D1624E5C2007359A8 /* ORController.m */,
+				314ED6E31630B191001A6F01 /* ORController.h */,
+				314ED6E41630B192001A6F01 /* ORController.m */,
+				314ED6E61630B1AC001A6F01 /* CrossCoverController.h */,
+				314ED6E71630B1AC001A6F01 /* CrossCoverController.m */,
+				314ED6DA1630A2D9001A6F01 /* PagerController.h */,
+				314ED6DB1630A2D9001A6F01 /* PagerController.m */,
 				31122EA51624C4BD0052590F /* ScheduleController.h */,
 				31122EA61624C4BD0052590F /* ScheduleController.m */,
 				31058A2C1607F83900A9AC72 /* AppDelegate.h */,
@@ -185,8 +194,6 @@
 				31058A241607F83900A9AC72 /* Supporting Files */,
 				31F564D5162228E300D59659 /* PDFViewController.h */,
 				31F564D6162228E300D59659 /* PDFViewController.m */,
-				CE1B916D162F5250001E30EC /* CrossCoverController.h */,
-				CE1B916E162F5250001E30EC /* CrossCoverController.m */,
 				314ED6D0162F61E2001A6F01 /* CallController.h */,
 				314ED6D1162F61E2001A6F01 /* CallController.m */,
 			);
@@ -196,7 +203,8 @@
 		31058A241607F83900A9AC72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				31A5B70F1622170C00B6ECCA /* Resident Handbook.pdf */,
+				314ED6D8162F96EC001A6F01 /* Dictation Templates.pdf */,
+				314ED6D6162F96D3001A6F01 /* Resident Handbook.pdf */,
 				31058A251607F83900A9AC72 /* MDAssistant-Info.plist */,
 				31058A261607F83900A9AC72 /* InfoPlist.strings */,
 				31058A291607F83900A9AC72 /* main.m */,
@@ -335,8 +343,9 @@
 				31058ABF16175CFA00A9AC72 /* system_help.png in Resources */,
 				31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */,
 				31A5B70E1622138600B6ECCA /* settings.png in Resources */,
-				31A5B7101622170C00B6ECCA /* Resident Handbook.pdf in Resources */,
 				CE1B916B162F4EF6001E30EC /* Default-568h@2x.png in Resources */,
+				314ED6D7162F96D3001A6F01 /* Resident Handbook.pdf in Resources */,
+				314ED6D9162F96EC001A6F01 /* Dictation Templates.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,12 +359,13 @@
 				31058A2A1607F83900A9AC72 /* main.m in Sources */,
 				31058A2E1607F83900A9AC72 /* AppDelegate.m in Sources */,
 				31058A3B1607F83900A9AC72 /* SettingsController.m in Sources */,
-				31A5B70C1622110F00B6ECCA /* PagerViewController.m in Sources */,
 				31F564D7162228E300D59659 /* PDFViewController.m in Sources */,
 				31122EA71624C4BD0052590F /* ScheduleController.m in Sources */,
-				31F5837E1624E5C2007359A8 /* ORController.m in Sources */,
-				CE1B916F162F5250001E30EC /* CrossCoverController.m in Sources */,
 				314ED6D3162F61E2001A6F01 /* CallController.m in Sources */,
+				314ED6DC1630A2DA001A6F01 /* PagerController.m in Sources */,
+				314ED6E21630ADE5001A6F01 /* HomeController.m in Sources */,
+				314ED6E51630B192001A6F01 /* ORController.m in Sources */,
+				314ED6E81630B1AC001A6F01 /* CrossCoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

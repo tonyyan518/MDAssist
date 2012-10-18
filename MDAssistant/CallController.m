@@ -13,24 +13,26 @@
 @end
 
 @implementation CallController
+@synthesize callLabel = _callLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [super viewDidLoad];
 }
 
 - (void)viewDidUnload
 {
+    [self setCallLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -43,11 +45,10 @@
 
 -(IBAction)callPhone:(id)sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
-    NSString *uniqueID = [defaults objectForKey:@"savedID"];
-    NSString *backOnPage = [NSString stringWithFormat:@"tel:919970%@,,*#,%@,12", pagerNum, uniqueID];
-    NSLog(backOnPage);
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:backOnPage]];
+    NSString *loadString = [defaults objectForKey:@"callNum"];
+    NSString *callString = [NSString stringWithFormat:@"tel:%@", loadString];
+    NSLog(@"%@", loadString);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
 }
 
 @end
