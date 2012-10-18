@@ -1,5 +1,5 @@
 //
-//  CrossCoverController.h
+//  HomeController.h
 //  MDAssistant
 //
 //  Created by guest user on 10/18/12.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CrossCoverController : UITableViewController
+@interface HomeController : UIViewController
+
+- (IBAction)openHandbook:(id)sender;
+- (IBAction)openDictation:(id)sender;
 
 @end

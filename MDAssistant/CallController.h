@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CallController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *callLabel;
 - (IBAction)callPhone:(id)sender;
 
 @end

@@ -1,20 +1,19 @@
 //
-//  CrossCoverController.m
+//  PagerController.m
 //  MDAssistant
 //
 //  Created by guest user on 10/18/12.
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "CrossCoverController.h"
+#import "PagerController.h"
 
-@interface CrossCoverController ()
+@interface PagerController ()
 
 @end
 
-@implementation CrossCoverController {
+@implementation PagerController {
     NSArray *options;
-    NSArray *CCnumbers;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -29,15 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    options = [NSArray arrayWithObjects:@"GYN-ONCOLOGY", @"BENIGN GYN",  @"OB/GYN CONSULT",  @"UROGYNECOLOGY", @"OB ANTEPARTUM", @"REI",nil];
-    CCnumbers = [NSArray arrayWithObjects:@"7770", @"4962",  @"7066",  @"9976", @"2233", @"9285", nil];
+    options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR",  @"Sign Back to On Page",  @"Refer to Cell Phone", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
 }
 
 - (void)viewDidUnload
@@ -63,15 +60,24 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [options count];
+    return [options count];;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier;
+    static NSString *tableID;
+    tableID = [options objectAtIndex:indexPath.row];
     
-    simpleTableIdentifier = @"CCcell";
-    
+    if ([tableID isEqualToString:@"Signout to OR"]) {
+        simpleTableIdentifier = @"ORcell";
+    }
+    else if ([tableID isEqualToString:@"Cross Cover"]) {
+        simpleTableIdentifier = @"CCcell";
+    }
+    else {
+        simpleTableIdentifier = @"RCcell";
+    }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
@@ -132,14 +138,24 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *uniqueID = [defaults objectForKey:@"savedID"];
     NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *cellNum = [defaults objectForKey:@"savedCell"];
     
-    NSString *CCnum = [CCnumbers objectAtIndex:indexPath.row];
-    NSString *callNum = [NSString stringWithFormat:@"919970%@,,*#,151,%@", CCnum, pagerNum];
-    [defaults setObject:callNum forKey:@"callNum"];
-    [defaults synchronize];
+    NSString *tableID = [options objectAtIndex:indexPath.row];
+    NSLog(@"%@", tableID);
+    if ([tableID isEqualToString:@"Sign Back to On Page"]) {
+        NSString *callNum = [NSString stringWithFormat:@"%@,,*#,%@,12", pagerNum, uniqueID];
+        [defaults setObject:callNum forKey:@"callNum"];
+        [defaults synchronize];
+    }
+    else if ([tableID isEqualToString:@"Refer to Cell Phone"]) {
+        NSString *callNum = [NSString stringWithFormat:@"%@,,*#,%@,17,%@", pagerNum, uniqueID,
+                              cellNum];
+        [defaults setObject:callNum forKey:@"callNum"];
+        [defaults synchronize];
+    }
 }
 
 @end

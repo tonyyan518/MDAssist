@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--First View Controller - First-->
+        <!--Home Controller - First-->
         <scene sceneID="11">
             <objects>
-                <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController title="First" id="2" customClass="HomeController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="openHandbook:" destination="2" eventType="touchUpInside" id="FEa-mr-lHx"/>
                                     <segue destination="rbZ-Rb-Vw6" kind="push" id="MnK-TT-kLb"/>
                                 </connections>
                             </button>
@@ -66,6 +67,10 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="openDictation:" destination="2" eventType="touchUpInside" id="nyS-GG-HU8"/>
+                                    <segue destination="sdX-fw-1fp" kind="push" id="XTJ-YS-boE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yz9-dh-nto">
                                 <rect key="frame" x="131" y="147" width="50" height="50"/>
@@ -116,10 +121,10 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wc4-nT-rAY">
-                                <rect key="frame" x="221" y="205" width="85" height="24"/>
+                                <rect key="frame" x="209" y="205" width="109" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <state key="normal" title="Surgical Notes">
+                                <state key="normal" title="Dictation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -143,7 +148,7 @@
                                 <rect key="frame" x="111" y="205" width="99" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                <state key="normal" title="Git Sucks">
+                                <state key="normal" title="Calculator">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -175,7 +180,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lPl-z7-aNF" kind="push" id="uSK-6f-OaH"/>
+                                    <segue destination="hCQ-OW-qkY" kind="push" id="c04-WT-rLr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LUF-gV-bDh">
@@ -227,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="-58" y="-546"/>
         </scene>
-        <!--Schedule Controller-->
+        <!--Schedule Controller - Call Schedule-->
         <scene sceneID="thH-Pd-M0T">
             <objects>
                 <viewController id="5yh-4x-CcV" customClass="ScheduleController" sceneMemberID="viewController">
@@ -243,7 +248,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oAu-dW-Jeg"/>
+                    <navigationItem key="navigationItem" title="Call Schedule" id="oAu-dW-Jeg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Jng-gl-kNQ"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="scheduleView" destination="m0V-ko-Leh" id="O6I-o2-2ZP"/>
                     </connections>
@@ -252,7 +259,7 @@
             </objects>
             <point key="canvasLocation" x="1038" y="478"/>
         </scene>
-        <!--View Controller - Handbook-->
+        <!--View Controller - Resident Handbook-->
         <scene sceneID="tRQ-FX-Kj0">
             <objects>
                 <viewController id="rbZ-Rb-Vw6" customClass="PDFViewController" sceneMemberID="viewController">
@@ -268,7 +275,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Handbook" id="A6T-U4-gWA"/>
+                    <navigationItem key="navigationItem" title="Resident Handbook" id="A6T-U4-gWA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gs8-t9-ljM"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="pdfView" destination="VWo-XE-juJ" id="PHI-hp-OMu"/>
                     </connections>
@@ -277,159 +286,101 @@
             </objects>
             <point key="canvasLocation" x="1032" y="-197"/>
         </scene>
-        <!--Cross Cover Controller - Cross Cover-->
-        <scene sceneID="bow-Lw-LOL">
+        <!--Pager Controller - Paging-->
+        <scene sceneID="CH8-lg-NHI">
             <objects>
-                <viewController id="q2G-7Y-kap" customClass="CrossCoverController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8eG-ar-xpE">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAW-IB-50s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="hCQ-OW-qkY" customClass="PagerController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="L4U-wy-oBq">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="0Ur-2k-wiI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CrCocell" id="U4u-rq-f7c">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <segue destination="Wr0-zu-jke" kind="push" id="bAi-ou-Ksf"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCcell" id="PIl-Mh-sqa">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
                                 <connections>
-                                    <outlet property="dataSource" destination="q2G-7Y-kap" id="OPr-wQ-N2l"/>
+                                    <segue destination="SkV-wL-Xcd" kind="push" id="pCC-JD-Pzh"/>
                                 </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Cross Cover" id="wYM-a6-otC"/>
-                    <connections>
-                        <outlet property="CrossCover" destination="0Ur-2k-wiI" id="NpI-Qj-hPa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eyZ-91-q07" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1133" y="-1897"/>
-        </scene>
-        <!--Pager View Controller - PagerViewController-->
-        <scene sceneID="hH9-E6-i3H">
-            <objects>
-                <viewController title="PagerViewController" id="lPl-z7-aNF" customClass="PagerViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HPR-Vp-uDl">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="74y-dO-OL6">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCcell" rowHeight="69" id="Vvn-lh-ZlM">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="68"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="1.3877787807814457e-17" width="1" height="1"/>
-                                        <connections>
-                                            <segue destination="q2G-7Y-kap" kind="push" id="8gi-cV-B3k"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ORcell" rowHeight="69" id="eLR-3A-e6j">
-                                        <rect key="frame" x="0.0" y="116" width="320" height="69"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="68"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="1.3877787807814457e-17" width="1" height="1"/>
-                                        <connections>
-                                            <segue destination="emf-2T-bXX" kind="push" id="G5P-JA-mlm"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RCcell" rowHeight="69" id="ma8-hg-cW2">
-                                        <rect key="frame" x="0.0" y="185" width="320" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="68"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <rect key="contentStretch" x="1.3877787807814457e-17" y="1.3877787807814457e-17" width="1" height="1"/>
-                                        <connections>
-                                            <segue destination="Wr0-zu-jke" kind="push" id="5im-ea-yiK"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ORcell" id="Jfl-Zo-dYw">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
                                 <connections>
-                                    <outlet property="dataSource" destination="lPl-z7-aNF" id="VWa-R1-7iV"/>
+                                    <segue destination="zTN-gO-REg" kind="push" id="iXC-bB-omV"/>
                                 </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Paging" id="7oM-Yx-3eH">
-                        <barButtonItem key="backBarButtonItem" title="Home" id="YFB-q4-FPE"/>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RCcell" id="bRN-5W-b6S">
+                                <rect key="frame" x="0.0" y="110" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="Wr0-zu-jke" kind="push" id="RBq-9h-jLc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hCQ-OW-qkY" id="BhO-Mu-f7U"/>
+                            <outlet property="delegate" destination="hCQ-OW-qkY" id="wal-Nc-PND"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Paging" id="Be2-jq-CrG">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="O7S-bK-TN9"/>
                     </navigationItem>
-                    <connections>
-                        <outlet property="PagerViewController" destination="HPR-Vp-uDl" id="WHp-iH-BPZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ue-mp-9Yv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="471" y="-1427"/>
+            <point key="canvasLocation" x="446" y="-1439"/>
         </scene>
-        <!--Controller - ORController-->
-        <scene sceneID="U7O-4O-pMY">
+        <!--Cross Cover Controller - Cross Cover-->
+        <scene sceneID="R2u-9o-Kg5">
             <objects>
-                <viewController title="ORController" id="emf-2T-bXX" customClass="ORController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ewI-Gh-E39">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GuP-oo-UuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="SkV-wL-Xcd" customClass="CrossCoverController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="m0U-F4-Mln">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="7zB-yI-78t">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ORcell" id="AVc-17-HhC">
-                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <segue destination="Wr0-zu-jke" kind="push" id="gva-2W-Ywv"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CCcell" id="sxE-9A-in0">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
                                 <connections>
-                                    <outlet property="dataSource" destination="emf-2T-bXX" id="yGB-Yr-uc5"/>
+                                    <segue destination="Wr0-zu-jke" kind="push" id="ObI-Jt-GSq"/>
                                 </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="OR" id="POF-Wn-mEy"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JhW-wB-o1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SkV-wL-Xcd" id="yMB-Wi-stZ"/>
+                            <outlet property="delegate" destination="SkV-wL-Xcd" id="aCw-4r-1qW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cross Cover" id="9ZM-Qp-WVi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="9iA-3y-g11"/>
+                    </navigationItem>
+                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1140" y="-993"/>
+            <point key="canvasLocation" x="1121" y="-1809"/>
         </scene>
-        <!--Call Controller-->
+        <!--Call Controller - Calling-->
         <scene sceneID="Dzd-aw-0ZL">
             <objects>
                 <viewController id="Wr0-zu-jke" customClass="CallController" sceneMemberID="viewController">
@@ -438,7 +389,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e2b-Ng-1z0">
-                                <rect key="frame" x="45" y="320" width="231" height="70"/>
+                                <rect key="frame" x="45" y="146" width="231" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Press to Call!">
@@ -452,17 +403,12 @@
                                     <action selector="callPhone:" destination="Wr0-zu-jke" eventType="touchUpInside" id="2Gx-mb-NBy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hey" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SYe-NW-Gua">
-                                <rect key="frame" x="139" y="52" width="31" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yky-tD-osj"/>
+                    <navigationItem key="navigationItem" title="Calling" id="yky-tD-osj">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="6rC-4V-kDz"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jt0-DK-yQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -568,8 +514,8 @@
                             <action selector="backgroundTouched:" destination="3" eventType="touchUpInside" id="RBp-4q-Jvv"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="second" id="6"/>
                     <navigationItem key="navigationItem" title="Settings" id="Bf1-ZX-e8O">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="gUF-T4-Lw1"/>
                         <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="32B-e0-BvP">
                             <connections>
                                 <action selector="saveData:" destination="3" id="xOM-jW-AEL"/>
@@ -605,6 +551,68 @@
             </objects>
             <point key="canvasLocation" x="-630" y="-546"/>
         </scene>
+        <!--View Controller - Dictation Templates-->
+        <scene sceneID="HJY-IO-P2P">
+            <objects>
+                <viewController id="sdX-fw-1fp" customClass="PDFViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hgH-Mq-K0V">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="9qo-qp-uap">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dictation Templates" id="D1r-k5-uYS">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="GC8-Dd-dM6"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfView" destination="9qo-qp-uap" id="TWu-a2-9f6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cb6-FJ-ZgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="-750"/>
+        </scene>
+        <!--Controller - OR-->
+        <scene sceneID="1w5-Ta-qK9">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWK-JD-jaX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="zTN-gO-REg" customClass="ORController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dxU-0T-gf1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ORcell" id="Oim-uV-Pel">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="Wr0-zu-jke" kind="push" id="5hC-CC-Rc4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zTN-gO-REg" id="cE9-au-V5j"/>
+                            <outlet property="delegate" destination="zTN-gO-REg" id="B9i-S6-e34"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="OR" id="3RX-98-pe2">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ChL-Q9-5xY"/>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1121" y="-1151"/>
+        </scene>
     </scenes>
     <resources>
         <image name="book.png" width="128" height="128"/>
@@ -614,7 +622,6 @@
         <image name="first" width="16" height="16"/>
         <image name="pager2.png" width="96" height="83"/>
         <image name="scalpel.png" width="286" height="550"/>
-        <image name="second" width="16" height="16"/>
         <image name="settings.png" width="128" height="128"/>
         <image name="system_help.png" width="128" height="128"/>
     </resources>
@@ -623,19 +630,21 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CallController.h"/>
             <relationships>
                 <relationship kind="action" name="callPhone:"/>
+                <relationship kind="outlet" name="callLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="CrossCoverController" superclassName="UIViewController">
+        <class className="CrossCoverController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CrossCoverController.h"/>
+        </class>
+        <class className="HomeController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeController.h"/>
             <relationships>
-                <relationship kind="outlet" name="CrossCover" candidateClass="UITableView"/>
+                <relationship kind="action" name="openDictation:"/>
+                <relationship kind="action" name="openHandbook:"/>
             </relationships>
         </class>
-        <class className="ORController" superclassName="UIViewController">
+        <class className="ORController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ORController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="message" candidateClass="UILabel"/>
-            </relationships>
         </class>
         <class className="PDFViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PDFViewController.h"/>
@@ -643,11 +652,8 @@
                 <relationship kind="outlet" name="pdfView" candidateClass="UIWebView"/>
             </relationships>
         </class>
-        <class className="PagerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="PagerViewController" candidateClass="UIView"/>
-            </relationships>
+        <class className="PagerController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerController.h"/>
         </class>
         <class className="ScheduleController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleController.h"/>
@@ -677,6 +683,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="gva-2W-Ywv"/>
+        <segue reference="5hC-CC-Rc4"/>
     </inferredMetricsTieBreakers>
 </document>

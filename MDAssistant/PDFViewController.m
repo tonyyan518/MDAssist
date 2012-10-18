@@ -27,7 +27,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Resident Handbook" ofType:@"pdf"];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *loadString = [defaults objectForKey:@"fileName"];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:loadString ofType:@"pdf"];
     NSURL *url = [NSURL fileURLWithPath:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [pdfView loadRequest:request];

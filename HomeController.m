@@ -1,54 +1,55 @@
 //
-//  CallController.m
+//  HomeController.m
 //  MDAssistant
 //
-//  Created by guest user on 10/17/12.
+//  Created by guest user on 10/18/12.
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "CallController.h"
+#import "HomeController.h"
 
-@interface CallController ()
+@interface HomeController ()
 
 @end
 
-@implementation CallController
-@synthesize callLabel = _callLabel;
+@implementation HomeController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        // Custom initialization
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-    // Do any additional setup after loading the view from its nib.
     [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
-    [self setCallLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}   
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
--(IBAction)callPhone:(id)sender {
+- (IBAction)openHandbook:(id)sender {
+    NSString *fileName = @"Resident Handbook";
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *loadString = [defaults objectForKey:@"callNum"];
-    NSString *callString = [NSString stringWithFormat:@"tel:%@", loadString];
-    NSLog(@"%@", loadString);
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+    [defaults setObject:fileName forKey:@"fileName"];
+}
+
+- (IBAction)openDictation:(id)sender {
+    NSString *fileName = @"Dictation Templates";
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:fileName forKey:@"fileName"];
 }
 
 @end
