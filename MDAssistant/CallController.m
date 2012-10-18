@@ -45,7 +45,7 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *pagerNum = [defaults objectForKey:@"savedPager"];
     NSString *uniqueID = [defaults objectForKey:@"savedID"];
-    NSString *backOnPage = [NSString stringWithFormat:@"te   l:919970%@,,*#,%@,12", pagerNum, uniqueID];
+    NSString *backOnPage = [NSString stringWithFormat:@"tel:919970%@,,*#,%@,12", pagerNum, uniqueID];
     NSLog(backOnPage);
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:backOnPage]];
 }
