@@ -29,8 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    options = [NSArray arrayWithObjects:@"OR1", @"OR2",  @"OR3",  @"OR4", @"OR5", @"OR6", @"OR7", @"OR8",@"OR9", @"OR10", @"OR11", @"OR12", @"OR14", @"OR15", @"OR16", @"OR17", nil];
-    ORnumbers = [NSArray arrayWithObjects:@"6810101", @"6810102", @"6810103", @"6810104", @"6810105", @"4708356",@"4708357",@"4708358",@"4708359",@"4708360",@"4708361",@"4708650",@"4708652",@"4708654",@"4708657",@"4708658", nil];
+    options = [NSArray arrayWithObjects:@"OR1", @"OR2",  @"OR3",  @"OR4", @"OR5", @"OR6", @"OR7", @"OR8",@"OR9", @"OR11", @"OR12", @"OR14", @"OR15", @"OR16", @"OR17", nil];
+    ORnumbers = [NSArray arrayWithObjects:@"6810101", @"6810102", @"6810103", @"6810104", @"6810105", @"6810106",@"6810107",@"6810108",@"6810109",@"6810111",@"6810112",@"6810114",@"6810115",@"6810116",@"6810117", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
