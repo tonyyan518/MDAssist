@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
     options = [NSArray arrayWithObjects:@"GYN-ONCOLOGY", @"BENIGN GYN",  @"OB/GYN CONSULT",  @"UROGYNECOLOGY", @"OB ANTEPARTUM", @"REI",nil];
-    CCnumbers = [NSArray arrayWithObjects:@"7770", @"4962",  @"7066",  @"9976", @"2233", @"9285", nil];
+    CCnumbers = [NSArray arrayWithObjects:@"7700", @"4962",  @"7066",  @"9976", @"2233", @"9285", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
