@@ -60,6 +60,7 @@
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
 		CE1B916B162F4EF6001E30EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1B916A162F4EF6001E30EC /* Default-568h@2x.png */; };
+		CE4A0C92164ED62C00E31225 /* Resident Handbook Links (1).pdf in Resources */ = {isa = PBXBuildFile; fileRef = CE4A0C91164ED62C00E31225 /* Resident Handbook Links (1).pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
 		CE1B916A162F4EF6001E30EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE4A0C91164ED62C00E31225 /* Resident Handbook Links (1).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Resident Handbook Links (1).pdf"; path = "../../../Resident Handbook Links (1).pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 		31058A241607F83900A9AC72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE4A0C91164ED62C00E31225 /* Resident Handbook Links (1).pdf */,
 				314ED6D8162F96EC001A6F01 /* Dictation Templates.pdf */,
 				314ED6D6162F96D3001A6F01 /* Resident Handbook.pdf */,
 				31058A251607F83900A9AC72 /* MDAssistant-Info.plist */,
@@ -346,6 +349,7 @@
 				CE1B916B162F4EF6001E30EC /* Default-568h@2x.png in Resources */,
 				314ED6D7162F96D3001A6F01 /* Resident Handbook.pdf in Resources */,
 				314ED6D9162F96EC001A6F01 /* Dictation Templates.pdf in Resources */,
+				CE4A0C92164ED62C00E31225 /* Resident Handbook Links (1).pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
