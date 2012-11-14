@@ -49,8 +49,8 @@
 		31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
-		CE1B916B162F4EF6001E30EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1B916A162F4EF6001E30EC /* Default-568h@2x.png */; };
-		CE717A231653F5290079A89D /* Resident Handbook Final2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CE717A221653F5290079A89D /* Resident Handbook Final2.pdf */; };
+		CED012E71654043B00F0B059 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131F0FB1652F22100177DB9 /* book2.png */; };
+		CED012E91654043F00F0B059 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131F0F81652F10600177DB9 /* mic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,8 +114,6 @@
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
-		CE1B916A162F4EF6001E30EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CE717A221653F5290079A89D /* Resident Handbook Final2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Resident Handbook Final2.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +195,6 @@
 		31058A241607F83900A9AC72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE717A221653F5290079A89D /* Resident Handbook Final2.pdf */,
 				31058A251607F83900A9AC72 /* MDAssistant-Info.plist */,
 				31058A261607F83900A9AC72 /* InfoPlist.strings */,
 				31058A291607F83900A9AC72 /* main.m */,
@@ -305,6 +302,8 @@
 				31058AB416175CFA00A9AC72 /* pager.png in Resources */,
 				31058AB516175CFA00A9AC72 /* pager2.png in Resources */,
 				31058AB616175CFA00A9AC72 /* pager3.png in Resources */,
+				CED012E71654043B00F0B059 /* book2.png in Resources */,
+				CED012E91654043F00F0B059 /* mic.png in Resources */,
 				31058AB716175CFA00A9AC72 /* phone 2.png in Resources */,
 				31058AB816175CFA00A9AC72 /* phone.png in Resources */,
 				31058AB916175CFA00A9AC72 /* scalpel.png in Resources */,
@@ -316,8 +315,6 @@
 				31058ABF16175CFA00A9AC72 /* system_help.png in Resources */,
 				31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */,
 				31A5B70E1622138600B6ECCA /* settings.png in Resources */,
-				CE1B916B162F4EF6001E30EC /* Default-568h@2x.png in Resources */,
-				CE717A231653F5290079A89D /* Resident Handbook Final2.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
