@@ -24,7 +24,11 @@
 {
     CallController *dest = segue.destinationViewController;
     NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-    NSString *num = [NSString stringWithFormat:@"919%@", [ORnumbers objectAtIndex:path.row]];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *uniqueID = [defaults objectForKey:@"savedID"];
+    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *ORnum = [ORnumbers objectAtIndex:path.row];
+    NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,18,%@#", pagerNum, uniqueID, ORnum];
     NSString *name = [NSString stringWithFormat:@"Signout to: %@",[options objectAtIndex:path.row]];
     NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
     NSMutableArray *callText = [NSMutableArray arrayWithObject:name];
