@@ -41,7 +41,7 @@
 }
 
 - (IBAction)openHandbook:(id)sender {
-    NSString *fileName = @"Resident Handbook Links (1)";
+    NSString *fileName = @"Resident Handbook Final2";
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:fileName forKey:@"fileName"];
 }
