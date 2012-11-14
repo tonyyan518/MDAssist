@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
         <!--Contacts Controller - Contacts-->
         <scene sceneID="hnW-Ig-pen">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RlG-8G-Hhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="QPO-M5-hBA" customClass="ContactsController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="S78-tx-BUg">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -35,6 +34,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Contacts" id="T5b-uq-sUu"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlG-8G-Hhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="467" y="-2392"/>
         </scene>
@@ -631,7 +631,6 @@
         <!--Dictation Templates Controller - Dictation-->
         <scene sceneID="aBo-kw-BK2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x6w-3m-F0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="dBW-Ej-Rhv" customClass="DictationTemplatesController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LGw-2D-Nhz">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -658,6 +657,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Dictation" id="54w-R4-e84"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6w-3m-F0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="761" y="-528"/>
         </scene>
@@ -726,7 +726,6 @@
         <!--Section Controller - Section-->
         <scene sceneID="Dng-Xh-hfH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TZc-e2-6IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="soK-D4-YC4" customClass="DTSectionController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ea4-qW-WG9">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -756,6 +755,7 @@
                         <outlet property="titleBar" destination="jo8-sL-Ct6" id="MnK-L1-WBg"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZc-e2-6IP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1282" y="-528"/>
         </scene>
