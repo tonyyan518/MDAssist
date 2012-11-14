@@ -1,53 +1,42 @@
 //
-//  PagerController.m
+//  DictationTemplatesController.m
 //  MDAssistant
 //
-//  Created by guest user on 10/18/12.
+//  Created by guest user on 11/13/12.
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "PagerController.h"
-#import "CallController.h"
+#import "DictationTemplatesController.h"
+#import "DTSectionController.h"
 
-@interface PagerController ()
+@interface DictationTemplatesController ()
 
 @end
 
-@implementation PagerController {
+@implementation DictationTemplatesController {
     NSArray *options;
+    NSArray *selection;
+    NSArray *obstetrics;
+    NSArray *gynecology;
+    NSArray *urogynecology;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"callSegue"])
-    {
-        CallController *dest = segue.destinationViewController;
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-        NSString *uniqueID = [defaults objectForKey:@"savedID"];
-        NSString *pagerNum = [defaults objectForKey:@"savedPager"];
-        NSString *cellNum = [defaults objectForKey:@"savedCell"];
-        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-        NSString *tableID = [options objectAtIndex:path.row];
-        if ([tableID isEqualToString:@"Sign Back to On Page"]) {
-            NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,12", pagerNum, uniqueID];
-            NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
-            NSString *text = @"Sign Back to On Page";
-            NSMutableArray *callText = [NSMutableArray arrayWithObject:text];
-            dest.callNums = callNums;
-            dest.callText = callText;
-        }
-        else if ([tableID isEqualToString:@"Refer to Cell Phone"]) {
-            NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,17,%@", pagerNum, uniqueID, cellNum];
-            NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
-            NSString *text = @"Refer to Cell Phone";
-            NSMutableArray *callText = [NSMutableArray arrayWithObject:text];
-            dest.callNums = callNums;
-            dest.callText = callText;
-        }
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    NSString *tableID = [options objectAtIndex:path.row];
+    if ([tableID isEqualToString:@"Obstetrics"]) {
+        selection = obstetrics;
     }
-
+    else if ([tableID isEqualToString:@"Gynecology"]) {
+        selection = gynecology;
+    }
+    else {
+        selection = urogynecology;
+    }
+    DTSectionController *dest = segue.destinationViewController;
+    dest.templateOptions = selection;
+    dest.titleBar.title = tableID;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -62,13 +51,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR",  @"Sign Back to On Page",  @"Refer to Cell Phone", nil];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    options = [NSArray arrayWithObjects:@"Obstetrics", @"Gynecology", @"UroGynecology", nil];
+    obstetrics = [NSArray arrayWithObjects:@"Dilation and Evacuation", @"Post Partum BTL", @"McDonald Cerclage", @"Cesarean Section", nil];
+    gynecology = [NSArray arrayWithObjects:@"LEEP", @"Cold Knife Conization", @"Essure", @"Hydrothermal Ablation", @"Hysteroscopy Dilation and Curettage", @"Suction Dilation and Curettage", @"Laparoscopic BTL", @"TAH and TAH/BSO", @"Total Vaginal Hysterectomy", @"Total Laparoscopic Hysterectomy", @"Diagnostic Laparoscopy for Ectopic Pregnancy", @"Abdominal Myomectomy", @"Discharge Summary", @"Partial Vulvectomy", @"Cold Knife Cone and Skinning Vulvectomy", @"Sentinel Node Dissection", @"Robotic Assisted TLH/BSO", @"BETA BOOK CONSULTATON REPORT", nil];
+    urogynecology = [NSArray arrayWithObjects:@"Anterior and Posterior Colporrhaphy", @"Anterior Colporrhaphy and Midurethral Sling", @"Anterior colporrhaphy and Cystourethroscopy", @"Anterior colporrhaphy midurethral sling with Bard ALIGN and cystourethroscopy", @"Bard Align midurethral mesh sling and cystourethroscopy", nil];
 }
 
 - (void)viewDidUnload
@@ -100,18 +86,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier;
-    static NSString *tableID;
-    tableID = [options objectAtIndex:indexPath.row];
+    simpleTableIdentifier = @"sectionCell";
     
-    if ([tableID isEqualToString:@"Signout to OR"]) {
-        simpleTableIdentifier = @"ORcell";
-    }
-    else if ([tableID isEqualToString:@"Cross Cover"]) {
-        simpleTableIdentifier = @"CCcell";
-    }
-    else {
-        simpleTableIdentifier = @"RCcell";
-    }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil) {
