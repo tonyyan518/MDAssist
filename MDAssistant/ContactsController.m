@@ -1,42 +1,33 @@
 //
-//  CrossCoverController.m
+//  ContactsController.m
 //  MDAssistant
 //
-//  Created by guest user on 10/18/12.
+//  Created by guest user on 11/13/12.
 //  Copyright (c) 2012 guest user. All rights reserved.
 //
 
-#import "CrossCoverController.h"
+#import "ContactsController.h"
 #import "CallController.h"
 
-#define CALL_SEGUE @"callSegue"
+@interface ContactsController ()
 
-@interface CrossCoverController ()
-@property (nonatomic, strong) NSMutableArray *selectedIndexPaths;
 @end
 
-@implementation CrossCoverController {
+@implementation ContactsController {
     NSArray *options;
-    NSArray *CCnumbers;
+    NSArray *numbers;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     CallController *dest = segue.destinationViewController;
-    NSMutableArray *callNums = [[NSMutableArray alloc] init];
-    NSMutableArray *callTexts = [[NSMutableArray alloc] init];
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
-    for(NSIndexPath *index in _selectedIndexPaths) {
-        NSString *CCnum = [CCnumbers objectAtIndex:index.row];
-        NSString *num = [NSString stringWithFormat:@"919970%@,,*#,151,%@", CCnum, pagerNum];
-        [callNums addObject:num];
-        NSString *CCtext = [options objectAtIndex: index.row];
-        NSString *text = [NSString stringWithFormat:@"Cross Cover: %@", CCtext];
-        [callTexts addObject:text];
-    }
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    NSString *num = [numbers objectAtIndex:path.row];
+    NSString *name = [NSString stringWithFormat:@"Contact: %@",[options objectAtIndex:path.row]];
+    NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
+    NSMutableArray *callText = [NSMutableArray arrayWithObject:name];
     dest.callNums = callNums;
-    dest.callText = callTexts;
+    dest.callText = callText;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -48,26 +39,11 @@
     return self;
 }
 
-- (IBAction)callButtonPressed:(UIBarButtonItem *)sender
-{
-
-    [self performSegueWithIdentifier:CALL_SEGUE sender:self];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    options = [NSArray arrayWithObjects:@"GYN-ONCOLOGY", @"BENIGN GYN",  @"OB/GYN CONSULTS",  @"UROGYNECOLOGY", @"OB ANTEPARTUM", @"REI",nil];
-    CCnumbers = [NSArray arrayWithObjects:@"7700", @"4962",  @"7066",  @"9976", @"2233", @"9285", nil];
-    self.tableView.allowsMultipleSelectionDuringEditing = YES;
-    [self.tableView setEditing:YES];
-    self.selectedIndexPaths = [[NSMutableArray alloc] init];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    options = [NSArray arrayWithObjects:@"John Smith", @"Jane Doe",  @"Tony Yan",  @"Leo Rofe", @"Gideon Rosenthal", nil];
+    numbers = [NSArray arrayWithObjects:@"1234567890", @"9876543210", @"4252833198", @"3107800391", @"8436962053", nil];
 }
 
 - (void)viewDidUnload
@@ -99,8 +75,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier;
-    
-    simpleTableIdentifier = @"CCcell";
+    simpleTableIdentifier = @"contactCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
@@ -108,29 +83,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellTapped:)];
-    [cell addGestureRecognizer:tap];
-    
-    
     cell.textLabel.text = [options objectAtIndex:indexPath.row];
-    cell.userInteractionEnabled = YES;
     return cell;
-}
 
-- (void) cellTapped: (UITapGestureRecognizer *) recognizer
-{
-    UITableViewCell *cellTapped = (UITableViewCell *) recognizer.view;
-    NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:cellTapped];
-    if([self.selectedIndexPaths containsObject:selectedIndexPath])
-    {
-        [self.selectedIndexPaths removeObject:selectedIndexPath];
-        [self.tableView deselectRowAtIndexPath:selectedIndexPath animated:NO];
-    }
-    else
-    {
-        [self.selectedIndexPaths addObject:selectedIndexPath];
-        [self.tableView selectRowAtIndexPath:selectedIndexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
-    }
 }
 
 /*
@@ -183,18 +138,6 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
-    
-    NSString *CCnum = [CCnumbers objectAtIndex:indexPath.row];
-    NSString *callNum = [NSString stringWithFormat:@"919970%@,,*#,151,%@", CCnum, pagerNum];
-    NSString *CCtext = [options objectAtIndex:indexPath.row];
-    NSString *callText = [NSString stringWithFormat:@"Cross Cover: %@", CCtext];
-    
-    [defaults setObject:callNum forKey:@"callNum"];
-    [defaults setObject:callText forKey:@"callText"];
-    [defaults synchronize];
 }
 
 @end

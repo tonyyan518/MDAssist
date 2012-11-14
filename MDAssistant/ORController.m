@@ -7,6 +7,9 @@
 //
 
 #import "ORController.h"
+#import "CallController.h"
+
+#define CALL_SEGUE @"callSegue"
 
 @interface ORController ()
 
@@ -15,6 +18,22 @@
 @implementation ORController {
     NSArray *options;
     NSArray *ORnumbers;
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CallController *dest = segue.destinationViewController;
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *uniqueID = [defaults objectForKey:@"savedID"];
+    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *ORnum = [ORnumbers objectAtIndex:path.row];
+    NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,18,%@#", pagerNum, uniqueID, ORnum];
+    NSString *name = [NSString stringWithFormat:@"Signout to: %@",[options objectAtIndex:path.row]];
+    NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
+    NSMutableArray *callText = [NSMutableArray arrayWithObject:name];
+    dest.callNums = callNums;
+    dest.callText = callText;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style

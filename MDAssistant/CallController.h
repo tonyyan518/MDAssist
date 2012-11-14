@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CallController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *callLabel;
+@interface CallController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *myTable;
+@property (nonatomic, strong) NSMutableArray *callText;
+@property (nonatomic, strong) NSMutableArray *callNums;
 - (IBAction)callPhone:(id)sender;
 
 @end
