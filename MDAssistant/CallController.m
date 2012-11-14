@@ -94,7 +94,7 @@
     }
     else {
         NSString *loadString = [_callNums objectAtIndex:self.callCounter];
-        NSString *callString = [NSString stringWithFormat:@"tel:%@", loadString];
+        NSString *callString = [NSString stringWithFormat:@"telprompt:%@", loadString];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
         self.callCounter++;
         [self.myTable reloadData];
