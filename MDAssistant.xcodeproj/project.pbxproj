@@ -41,6 +41,24 @@
 		3131F0FF1652F9A900177DB9 /* DictationTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */; };
 		3131F1021652FB9800177DB9 /* DTSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F1011652FB9800177DB9 /* DTSectionController.m */; };
 		3131F141165335D200177DB9 /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F140165335D100177DB9 /* ContactsController.m */; };
+		3131F1551653F79600177DB9 /* Abdominal Myomectomy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1431653F79600177DB9 /* Abdominal Myomectomy.pdf */; };
+		3131F1561653F79600177DB9 /* BETA BOOK CONSULTATON REPORT.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1441653F79600177DB9 /* BETA BOOK CONSULTATON REPORT.pdf */; };
+		3131F1571653F79600177DB9 /* Cold Knife Cone and Skinning Vulvectomy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1451653F79600177DB9 /* Cold Knife Cone and Skinning Vulvectomy.pdf */; };
+		3131F1581653F79600177DB9 /* Cold Knife Conization.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1461653F79600177DB9 /* Cold Knife Conization.pdf */; };
+		3131F1591653F79600177DB9 /* Diagnostic Laparoscopy for Ectopic Pregnancy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1471653F79600177DB9 /* Diagnostic Laparoscopy for Ectopic Pregnancy.pdf */; };
+		3131F15A1653F79600177DB9 /* Discharge Summary.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1481653F79600177DB9 /* Discharge Summary.pdf */; };
+		3131F15B1653F79600177DB9 /* Essure.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1491653F79600177DB9 /* Essure.pdf */; };
+		3131F15C1653F79600177DB9 /* Hydrothermal Ablation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F14A1653F79600177DB9 /* Hydrothermal Ablation.pdf */; };
+		3131F15D1653F79600177DB9 /* Hysteroscopy Dilation and Curettage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F14B1653F79600177DB9 /* Hysteroscopy Dilation and Curettage.pdf */; };
+		3131F15E1653F79600177DB9 /* Laparoscopic BTL.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F14C1653F79600177DB9 /* Laparoscopic BTL.pdf */; };
+		3131F15F1653F79600177DB9 /* LEEP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F14D1653F79600177DB9 /* LEEP.pdf */; };
+		3131F1601653F79600177DB9 /* Partial Vulvectomy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F14E1653F79600177DB9 /* Partial Vulvectomy.pdf */; };
+		3131F1611653F79600177DB9 /* Robotic Assisted TLH.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F14F1653F79600177DB9 /* Robotic Assisted TLH.pdf */; };
+		3131F1621653F79600177DB9 /* Sentinel Node Dissection.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1501653F79600177DB9 /* Sentinel Node Dissection.pdf */; };
+		3131F1631653F79600177DB9 /* Suction Dilation and Curettage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1511653F79600177DB9 /* Suction Dilation and Curettage.pdf */; };
+		3131F1641653F79600177DB9 /* TAH and TAH.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1521653F79600177DB9 /* TAH and TAH.pdf */; };
+		3131F1651653F79600177DB9 /* Total Laparoscopic Hysterectomy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1531653F79600177DB9 /* Total Laparoscopic Hysterectomy.pdf */; };
+		3131F1661653F79600177DB9 /* Total Vaginal Hysterectomy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3131F1541653F79600177DB9 /* Total Vaginal Hysterectomy.pdf */; };
 		314ED6D3162F61E2001A6F01 /* CallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6D1162F61E2001A6F01 /* CallController.m */; };
 		314ED6DC1630A2DA001A6F01 /* PagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6DB1630A2D9001A6F01 /* PagerController.m */; };
 		314ED6E21630ADE5001A6F01 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6E11630ADE5001A6F01 /* HomeController.m */; };
@@ -91,8 +109,8 @@
 		31058A9D16175CFA00A9AC72 /* system_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = system_help.png; sourceTree = "<group>"; };
 		31122EA51624C4BD0052590F /* ScheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleController.h; sourceTree = "<group>"; };
 		31122EA61624C4BD0052590F /* ScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleController.m; sourceTree = "<group>"; };
-		3131F0F81652F10600177DB9 /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic.png; sourceTree = "<group>"; };
-		3131F0FB1652F22100177DB9 /* book2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book2.png; sourceTree = "<group>"; };
+		312175E11653FDDB00EC2B7A /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic.png; sourceTree = "<group>"; };
+		312175E31653FDEC00EC2B7A /* book2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book2.png; sourceTree = "<group>"; };
 		3131F0FD1652F9A900177DB9 /* DictationTemplatesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictationTemplatesController.h; sourceTree = "<group>"; };
 		3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictationTemplatesController.m; sourceTree = "<group>"; };
 		3131F1001652FB9800177DB9 /* DTSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSectionController.h; sourceTree = "<group>"; };
@@ -100,6 +118,24 @@
 		3131F103165301C900177DB9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3131F13F165335CF00177DB9 /* ContactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsController.h; sourceTree = "<group>"; };
 		3131F140165335D100177DB9 /* ContactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsController.m; sourceTree = "<group>"; };
+		3131F1431653F79600177DB9 /* Abdominal Myomectomy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Abdominal Myomectomy.pdf"; sourceTree = "<group>"; };
+		3131F1441653F79600177DB9 /* BETA BOOK CONSULTATON REPORT.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "BETA BOOK CONSULTATON REPORT.pdf"; sourceTree = "<group>"; };
+		3131F1451653F79600177DB9 /* Cold Knife Cone and Skinning Vulvectomy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cold Knife Cone and Skinning Vulvectomy.pdf"; sourceTree = "<group>"; };
+		3131F1461653F79600177DB9 /* Cold Knife Conization.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cold Knife Conization.pdf"; sourceTree = "<group>"; };
+		3131F1471653F79600177DB9 /* Diagnostic Laparoscopy for Ectopic Pregnancy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Diagnostic Laparoscopy for Ectopic Pregnancy.pdf"; sourceTree = "<group>"; };
+		3131F1481653F79600177DB9 /* Discharge Summary.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Discharge Summary.pdf"; sourceTree = "<group>"; };
+		3131F1491653F79600177DB9 /* Essure.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Essure.pdf; sourceTree = "<group>"; };
+		3131F14A1653F79600177DB9 /* Hydrothermal Ablation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hydrothermal Ablation.pdf"; sourceTree = "<group>"; };
+		3131F14B1653F79600177DB9 /* Hysteroscopy Dilation and Curettage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Hysteroscopy Dilation and Curettage.pdf"; sourceTree = "<group>"; };
+		3131F14C1653F79600177DB9 /* Laparoscopic BTL.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Laparoscopic BTL.pdf"; sourceTree = "<group>"; };
+		3131F14D1653F79600177DB9 /* LEEP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LEEP.pdf; sourceTree = "<group>"; };
+		3131F14E1653F79600177DB9 /* Partial Vulvectomy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Partial Vulvectomy.pdf"; sourceTree = "<group>"; };
+		3131F14F1653F79600177DB9 /* Robotic Assisted TLH.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Robotic Assisted TLH.pdf"; sourceTree = "<group>"; };
+		3131F1501653F79600177DB9 /* Sentinel Node Dissection.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Sentinel Node Dissection.pdf"; sourceTree = "<group>"; };
+		3131F1511653F79600177DB9 /* Suction Dilation and Curettage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Suction Dilation and Curettage.pdf"; sourceTree = "<group>"; };
+		3131F1521653F79600177DB9 /* TAH and TAH.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "TAH and TAH.pdf"; sourceTree = "<group>"; };
+		3131F1531653F79600177DB9 /* Total Laparoscopic Hysterectomy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Total Laparoscopic Hysterectomy.pdf"; sourceTree = "<group>"; };
+		3131F1541653F79600177DB9 /* Total Vaginal Hysterectomy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Total Vaginal Hysterectomy.pdf"; sourceTree = "<group>"; };
 		314ED6D0162F61E2001A6F01 /* CallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallController.h; sourceTree = "<group>"; };
 		314ED6D1162F61E2001A6F01 /* CallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallController.m; sourceTree = "<group>"; };
 		314ED6DA1630A2D9001A6F01 /* PagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerController.h; sourceTree = "<group>"; };
@@ -206,8 +242,8 @@
 		31058A7B16175CFA00A9AC72 /* MD_Assistant_Images */ = {
 			isa = PBXGroup;
 			children = (
-				3131F0FB1652F22100177DB9 /* book2.png */,
-				3131F0F81652F10600177DB9 /* mic.png */,
+				312175E31653FDEC00EC2B7A /* book2.png */,
+				312175E11653FDDB00EC2B7A /* mic.png */,
 				31A5B70D1622138600B6ECCA /* settings.png */,
 				31058A7F16175CFA00A9AC72 /* address_book.png */,
 				31058A8216175CFA00A9AC72 /* application_vnd_oasis_opendocument_formula.png */,
