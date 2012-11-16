@@ -76,6 +76,8 @@
 		31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
+		CE840AFB165444A600E1C240 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131F103165301C900177DB9 /* Default.png */; };
+		CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE840AFD1654453200E1C240 /* Default-568h@2x.png */; };
 		CED012E71654043B00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		CED012E91654043F00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
@@ -168,6 +170,7 @@
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		CE840AFD1654453200E1C240 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,7 @@
 		31058A0E1607F83900A9AC72 = {
 			isa = PBXGroup;
 			children = (
+				CE840AFD1654453200E1C240 /* Default-568h@2x.png */,
 				3131F103165301C900177DB9 /* Default.png */,
 				31058A231607F83900A9AC72 /* MDAssistant */,
 				31058A1C1607F83900A9AC72 /* Frameworks */,
@@ -455,6 +459,8 @@
 				3121765D1654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf in Resources */,
 				3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */,
 				312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */,
+				CE840AFB165444A600E1C240 /* Default.png in Resources */,
+				CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
