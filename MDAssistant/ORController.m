@@ -157,8 +157,7 @@
     
     NSString *ORnum = [ORnumbers objectAtIndex:indexPath.row];
     NSString *callNum = [NSString stringWithFormat:@"%@,,*#,%@,18,%@#", pagerNum, uniqueID, ORnum];
-    [defaults setObject:callNum forKey:@"callNum"];
-    [defaults synchronize];
+    
 }
 
 @end
