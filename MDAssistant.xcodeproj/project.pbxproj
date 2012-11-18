@@ -66,6 +66,7 @@
 		3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3121765E1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf */; };
 		312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176601654426800EC2B7A /* TAH and TAH|BSO.pdf */; };
 		312176631654439400EC2B7A /* Resident Handbook Final2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176621654439400EC2B7A /* Resident Handbook Final2.pdf */; };
+		3121766716569AA600EC2B7A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3121766616569AA500EC2B7A /* Default.png */; };
 		3131F0FF1652F9A900177DB9 /* DictationTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */; };
 		3131F1021652FB9800177DB9 /* DTSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F1011652FB9800177DB9 /* DTSectionController.m */; };
 		3131F141165335D200177DB9 /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F140165335D100177DB9 /* ContactsController.m */; };
@@ -149,11 +150,11 @@
 		3121765E1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Robotic Assisted TLH|BSO.pdf"; sourceTree = "<group>"; };
 		312176601654426800EC2B7A /* TAH and TAH|BSO.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "TAH and TAH|BSO.pdf"; sourceTree = "<group>"; };
 		312176621654439400EC2B7A /* Resident Handbook Final2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Resident Handbook Final2.pdf"; sourceTree = "<group>"; };
+		3121766616569AA500EC2B7A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3131F0FD1652F9A900177DB9 /* DictationTemplatesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictationTemplatesController.h; sourceTree = "<group>"; };
 		3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictationTemplatesController.m; sourceTree = "<group>"; };
 		3131F1001652FB9800177DB9 /* DTSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSectionController.h; sourceTree = "<group>"; };
 		3131F1011652FB9800177DB9 /* DTSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSectionController.m; sourceTree = "<group>"; };
-		3131F103165301C900177DB9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3131F13F165335CF00177DB9 /* ContactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsController.h; sourceTree = "<group>"; };
 		3131F140165335D100177DB9 /* ContactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsController.m; sourceTree = "<group>"; };
 		314ED6D0162F61E2001A6F01 /* CallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallController.h; sourceTree = "<group>"; };
@@ -189,7 +190,7 @@
 		31058A0E1607F83900A9AC72 = {
 			isa = PBXGroup;
 			children = (
-				3131F103165301C900177DB9 /* Default.png */,
+				3121766616569AA500EC2B7A /* Default.png */,
 				31058A231607F83900A9AC72 /* MDAssistant */,
 				31058A1C1607F83900A9AC72 /* Frameworks */,
 				31058A1A1607F83900A9AC72 /* Products */,
@@ -459,6 +460,7 @@
 				3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */,
 				312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */,
 				312176631654439400EC2B7A /* Resident Handbook Final2.pdf in Resources */,
+				3121766716569AA600EC2B7A /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
