@@ -75,11 +75,8 @@
 		314ED6E21630ADE5001A6F01 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6E11630ADE5001A6F01 /* HomeController.m */; };
 		314ED6E51630B192001A6F01 /* ORController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6E41630B192001A6F01 /* ORController.m */; };
 		314ED6E81630B1AC001A6F01 /* CrossCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 314ED6E71630B1AC001A6F01 /* CrossCoverController.m */; };
-		31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
-		CE840AFB165444A600E1C240 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131F103165301C900177DB9 /* Default.png */; };
-		CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE840AFD1654453200E1C240 /* Default-568h@2x.png */; };
 		CED012E71654043B00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		CED012E91654043F00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
@@ -169,11 +166,9 @@
 		314ED6E41630B192001A6F01 /* ORController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORController.m; sourceTree = "<group>"; };
 		314ED6E61630B1AC001A6F01 /* CrossCoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossCoverController.h; sourceTree = "<group>"; };
 		314ED6E71630B1AC001A6F01 /* CrossCoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrossCoverController.m; sourceTree = "<group>"; };
-		31A5B70816220E5200B6ECCA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MDAssistant/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
-		CE840AFD1654453200E1C240 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,7 +218,6 @@
 			children = (
 				314ED6E01630ADE5001A6F01 /* HomeController.h */,
 				314ED6E11630ADE5001A6F01 /* HomeController.m */,
-				31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */,
 				314ED6E31630B191001A6F01 /* ORController.h */,
 				314ED6E41630B192001A6F01 /* ORController.m */,
 				314ED6E61630B1AC001A6F01 /* CrossCoverController.h */,
@@ -433,7 +427,6 @@
 				31058ABD16175CFA00A9AC72 /* symbol.png in Resources */,
 				31058ABE16175CFA00A9AC72 /* symbol_check.png in Resources */,
 				31058ABF16175CFA00A9AC72 /* system_help.png in Resources */,
-				31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */,
 				31A5B70E1622138600B6ECCA /* settings.png in Resources */,
 				312176431654417600EC2B7A /* Abdominal Myomectomy.pdf in Resources */,
 				312176441654417600EC2B7A /* BETA BOOK CONSULTATON REPORT.pdf in Resources */,
@@ -499,15 +492,6 @@
 				31058A271607F83900A9AC72 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31A5B70816220E5200B6ECCA /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
