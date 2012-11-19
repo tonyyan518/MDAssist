@@ -65,7 +65,6 @@
 		3121765D1654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176421654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf */; };
 		3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3121765E1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf */; };
 		312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176601654426800EC2B7A /* TAH and TAH|BSO.pdf */; };
-		312176631654439400EC2B7A /* Resident Handbook Final2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176621654439400EC2B7A /* Resident Handbook Final2.pdf */; };
 		3131F0FF1652F9A900177DB9 /* DictationTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */; };
 		3131F1021652FB9800177DB9 /* DTSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F1011652FB9800177DB9 /* DTSectionController.m */; };
 		3131F141165335D200177DB9 /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F140165335D100177DB9 /* ContactsController.m */; };
@@ -77,6 +76,10 @@
 		31A5B70916220E5200B6ECCA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
+		86D9FF6B1659B43700A02B88 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E31653FDEC00EC2B7A /* book2.png */; };
+		86D9FF6C1659B43B00A02B88 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E11653FDDB00EC2B7A /* mic.png */; };
+		86D9FF6D1659B45500A02B88 /* Resident Handbook Final2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176621654439400EC2B7A /* Resident Handbook Final2.pdf */; };
+		86D9FF711659BD0E00A02B88 /* Resident Handbook Final3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 86D9FF701659BD0D00A02B88 /* Resident Handbook Final3.pdf */; };
 		CE840AFB165444A600E1C240 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131F103165301C900177DB9 /* Default.png */; };
 		CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE840AFD1654453200E1C240 /* Default-568h@2x.png */; };
 		CED012E71654043B00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
@@ -172,6 +175,7 @@
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		86D9FF701659BD0D00A02B88 /* Resident Handbook Final3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Resident Handbook Final3.pdf"; path = "MD_Assistant_Images/Resident Handbook Final3.pdf"; sourceTree = "<group>"; };
 		CE840AFD1654453200E1C240 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +225,8 @@
 		31058A231607F83900A9AC72 /* MDAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				86D9FF701659BD0D00A02B88 /* Resident Handbook Final3.pdf */,
+				312176621654439400EC2B7A /* Resident Handbook Final2.pdf */,
 				314ED6E01630ADE5001A6F01 /* HomeController.h */,
 				314ED6E11630ADE5001A6F01 /* HomeController.m */,
 				31A5B70716220E5200B6ECCA /* MainStoryboard.storyboard */,
@@ -236,7 +242,6 @@
 				31058A2D1607F83900A9AC72 /* AppDelegate.m */,
 				31058A391607F83900A9AC72 /* SettingsController.h */,
 				31058A3A1607F83900A9AC72 /* SettingsController.m */,
-				312176621654439400EC2B7A /* Resident Handbook Final2.pdf */,
 				312176241654417600EC2B7A /* Dictations */,
 				31058A7B16175CFA00A9AC72 /* MD_Assistant_Images */,
 				31058A241607F83900A9AC72 /* Supporting Files */,
@@ -422,7 +427,10 @@
 				31058AB416175CFA00A9AC72 /* pager.png in Resources */,
 				31058AB516175CFA00A9AC72 /* pager2.png in Resources */,
 				31058AB616175CFA00A9AC72 /* pager3.png in Resources */,
+				86D9FF6B1659B43700A02B88 /* book2.png in Resources */,
+				86D9FF6C1659B43B00A02B88 /* mic.png in Resources */,
 				CED012E71654043B00F0B059 /* (null) in Resources */,
+				86D9FF6D1659B45500A02B88 /* Resident Handbook Final2.pdf in Resources */,
 				CED012E91654043F00F0B059 /* (null) in Resources */,
 				31058AB716175CFA00A9AC72 /* phone 2.png in Resources */,
 				31058AB816175CFA00A9AC72 /* phone.png in Resources */,
@@ -464,6 +472,7 @@
 				312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */,
 				CE840AFB165444A600E1C240 /* Default.png in Resources */,
 				CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */,
+				86D9FF711659BD0E00A02B88 /* Resident Handbook Final3.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,10 +574,14 @@
 		31058A431607F83900A9AC72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gideon ROSENTHAL (77766H2W8B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gideon ROSENTHAL (77766H2W8B)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDAssistant/MDAssistant-Prefix.pch";
 				INFOPLIST_FILE = "MDAssistant/MDAssistant-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7D438B99-1A56-4E66-BB84-E3E391D61A50";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7D438B99-1A56-4E66-BB84-E3E391D61A50";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -576,10 +589,12 @@
 		31058A441607F83900A9AC72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDAssistant/MDAssistant-Prefix.pch";
 				INFOPLIST_FILE = "MDAssistant/MDAssistant-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
