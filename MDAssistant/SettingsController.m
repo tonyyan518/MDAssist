@@ -85,15 +85,29 @@
     NSString *savedCell = self.cellNumberText.text;
     NSString *savedPager = self.pagerNumberText.text;
     NSString *savedEmail = self.emailText.text;
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:savedName forKey:@"savedName"];
-    [defaults setObject:savedID forKey:@"savedID"];
-    [defaults setObject:savedCell forKey:@"savedCell"];
-    [defaults setObject:savedPager forKey:@"savedPager"];
-    [defaults setObject:savedEmail forKey:@"savedEmail"];
-    [defaults synchronize];
-    
-    [self.navigationController popViewControllerAnimated:YES];
+    if ([savedID length ] != 7) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Unique ID must be 7 digits" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    else if ([savedCell length ] != 10) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Cell # must be 10 digits with no symbols" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    else if ([savedPager length ] != 10) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Pager # must be 10 digits with no symbols" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    else {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:savedName forKey:@"savedName"];
+        [defaults setObject:savedID forKey:@"savedID"];
+        [defaults setObject:savedCell forKey:@"savedCell"];
+        [defaults setObject:savedPager forKey:@"savedPager"];
+        [defaults setObject:savedEmail forKey:@"savedEmail"];
+        [defaults synchronize];
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 };
 
 - (IBAction)loadData:(id)sender {

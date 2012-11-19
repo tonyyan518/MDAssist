@@ -48,8 +48,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    options = [NSArray arrayWithObjects:@"OR1", @"OR2",  @"OR3",  @"OR4", @"OR5", @"OR6", @"OR7", @"OR8",@"OR9", @"OR11", @"OR12", @"OR14", @"OR15", @"OR16", @"OR17", nil];
-    ORnumbers = [NSArray arrayWithObjects:@"6810101", @"6810102", @"6810103", @"6810104", @"6810105", @"6810106",@"6810107",@"6810108",@"6810109",@"6810111",@"6810112",@"6810114",@"6810115",@"6810116",@"6810117", nil];
+    options = [NSArray arrayWithObjects:@"Duke North OR 1", @"Duke North OR 2",  @"Duke North OR 3",  @"Duke North OR 4", @"Duke North OR 5", @"Duke North OR 6", @"Duke North OR 7", @"Duke North OR 8",@"Duke North OR 9", @"Duke North OR 11", @"Duke North OR 12", @"Duke North OR 14", @"Duke North OR 15", @"Duke North OR 16", @"Duke North OR 17", @"Duke North OR 18", @"Duke North OR 19", @"Duke North OR 20", @"Duke North OR 21", @"Duke North OR 22", @"Duke North OR 23", @"Duke North OR 24", @"Duke North OR 25", @"Duke North OR 26", @"Duke North OR 27", @"Duke North OR 28", @"Duke North OR 29", @"Duke North OR 30", @"Duke North OR 31", @"Duke North OR 32", @"Duke North OR 33", @"Duke North OR 34", @"Duke North OR 35", @"Duke North OR 36", @"Duke North OR 37", @"Pediatric OR 1", @"Pediatric OR 2", @"Obstetric OR", @"Obstetric DR 1", @"Obstetric DR 2", @"Durham Region OR 1", @"Durham Region OR 2", @"Durham Region OR 3", @"Durham Region OR 4", @"Durham Region OR 5", @"Durham Region OR 3", @"Durham Region OR 3", @"Durham Region OR 4", @"Durham Region OR 5", @"Durham Region OR 6", @"Durham Region OR 7", @"Durham Region OR 8", @"Durham Region OR 9", @"Durham Region OR 10", @"Durham Region OR 11", @"Durham Region OR 12", @"Durham Region OR 13", @"Durham Region OR 14", @"Durham Region OR 15", @"Durham Region OR 16", @"Durham Region OR 17", @"ASC Region OR 1", @"ASC Region OR 2", @"ASC Region OR 3", @"ASC Region OR 4", @"ASC Region OR 5", @"ASC Region OR 6", @"ASC Region OR 7", @"ASC Region OR 8", @"ASC Region OR 9", nil];
+    ORnumbers = [NSArray arrayWithObjects:@"6810101", @"6810102", @"6810103", @"6810104", @"6810105", @"6810106", @"6810107", @"6810108", @"6810109", @"6810111", @"6810112", @"6810114", @"6810115", @"6810116", @"6810117", @"6810118", @"6810119", @"6810120", @"6810121", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -154,10 +154,10 @@
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *uniqueID = [defaults objectForKey:@"savedID"];
     NSString *pagerNum = [defaults objectForKey:@"savedPager"];
-    
     NSString *ORnum = [ORnumbers objectAtIndex:indexPath.row];
-    NSString *callNum = [NSString stringWithFormat:@"%@,,*#,%@,18,%@#", pagerNum, uniqueID, ORnum];
-    
+    NSString *callString = [NSString stringWithFormat:@"telprompt:%@,,*#,%@,18,%@#", pagerNum, uniqueID, ORnum];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+    NSLog(@"%@", callString);
 }
 
 @end

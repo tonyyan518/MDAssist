@@ -50,7 +50,6 @@
 
 - (IBAction)callButtonPressed:(UIBarButtonItem *)sender
 {
-
     [self performSegueWithIdentifier:CALL_SEGUE sender:self];
 }
 
