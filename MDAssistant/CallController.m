@@ -7,15 +7,10 @@
 //
 
 #import "CallController.h"
-#import <CoreTelephony/CTCall.h>
-#import <CoreTelephony/CTCallCenter.h>
-#import <CoreTelephony/CTCarrier.h>
-#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
 @interface CallController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic) int callCounter;
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
-@property (nonatomic) CTCallCenter *callCenter;
 
 @end
 
@@ -37,18 +32,6 @@
     self.myTable.delegate = self;
     self.myTable.dataSource = self;
     self.callCounter = 0;
-    CTCallCenter *callCenter = [[CTCallCenter alloc] init];
-    callCenter.callEventHandler=^(CTCall* call){
-        if (call.callState == CTCallStateDisconnected)
-        {
-            self.callCounter++;
-            [self.myTable reloadData];
-            if(self.callCounter >= self.callText.count)
-            {
-                [self.callButton setTitle:@"DONE" forState:UIControlStateNormal];
-            }
-        }
-    };
     
     [super viewDidLoad];
 }
@@ -113,6 +96,12 @@
         NSString *loadString = [_callNums objectAtIndex:self.callCounter];
         NSString *callString = [NSString stringWithFormat:@"telprompt:%@", loadString];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+        self.callCounter++;
+        [self.myTable reloadData];
+        if(self.callCounter >= self.callText.count)
+        {
+            [self.callButton setTitle:@"DONE" forState:UIControlStateNormal];
+        }
     }
 }
 
