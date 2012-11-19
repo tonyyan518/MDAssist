@@ -62,7 +62,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    options = [NSArray arrayWithObjects:@"Cross Cover", @"Signout to OR",  @"Sign Back to On Page",  @"Refer to Cell Phone", nil];
+    options = [NSArray arrayWithObjects:@"Cross Cover", @"Sign Out to OR", @"On Page", @"Not On Page", @"Refer to Cell Phone", @"Status: Emergency Only", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -103,7 +103,7 @@
     static NSString *tableID;
     tableID = [options objectAtIndex:indexPath.row];
     
-    if ([tableID isEqualToString:@"Signout to OR"]) {
+    if ([tableID isEqualToString:@"Sign Out to OR"]) {
         simpleTableIdentifier = @"ORcell";
     }
     else if ([tableID isEqualToString:@"Cross Cover"]) {
@@ -172,6 +172,36 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-}
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *uniqueID = [defaults objectForKey:@"savedID"];
+    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *cellNum = [defaults objectForKey:@"savedCell"];
+    NSString *tableID = [options objectAtIndex:indexPath.row];
+    if ([tableID isEqualToString:@"On Page"]) {
+        NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,12", pagerNum, uniqueID];
+        NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+        NSLog(@"%@", callString);
+    }
+    else if ([tableID isEqualToString:@"Refer to Cell Phone"]) {
+        NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,17,%@", pagerNum, uniqueID, cellNum];
+        NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+        NSLog(@"%@", callString);
+    }
+    else if ([tableID isEqualToString:@"Not On Page"]) {
+        NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,13", pagerNum, uniqueID];
+        NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+        NSLog(@"%@", callString);
+    }
+    else if ([tableID isEqualToString:@"Status: Emergency Only"]) {
+        NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,16", pagerNum, uniqueID];
+        NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
+        NSLog(@"%@", callString);
+    }
+} 
 
 @end

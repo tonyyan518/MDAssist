@@ -32,7 +32,7 @@
     self.myTable.delegate = self;
     self.myTable.dataSource = self;
     self.callCounter = 0;
-    // Do any additional setup after loading the view from its nib.
+    
     [super viewDidLoad];
 }
 
@@ -98,7 +98,6 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
         self.callCounter++;
         [self.myTable reloadData];
-        NSLog(@"%@",callString);
         if(self.callCounter >= self.callText.count)
         {
             [self.callButton setTitle:@"DONE" forState:UIControlStateNormal];

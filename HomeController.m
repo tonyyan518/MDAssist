@@ -8,6 +8,8 @@
 
 #import "HomeController.h"
 
+#define PAGER_SEGUE @"pagerSegue"
+
 @interface HomeController ()
 
 @end
@@ -37,7 +39,22 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    //return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return NO;
+}
+
+- (IBAction)pagerButtonPressed:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *uniqueID = [defaults objectForKey:@"savedID"];
+    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *cellNum = [defaults objectForKey:@"savedCell"];
+    if(uniqueID != NULL && pagerNum != NULL && cellNum != NULL) {
+        [self performSegueWithIdentifier:PAGER_SEGUE sender:self];
+    }
+    else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Please fill out Settings before using the Pager Assistant" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];    }
 }
 
 - (IBAction)openHandbook:(id)sender {

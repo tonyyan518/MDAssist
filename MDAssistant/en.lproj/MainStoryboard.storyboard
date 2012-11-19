@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
@@ -211,7 +211,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hCQ-OW-qkY" kind="push" id="c04-WT-rLr"/>
+                                    <action selector="pagerButtonPressed:" destination="2" eventType="touchUpInside" id="JgQ-0Y-gMK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LUF-gV-bDh">
@@ -270,6 +270,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="7"/>
                     <navigationItem key="navigationItem" title="Home" id="Huh-JI-rL4"/>
+                    <connections>
+                        <segue destination="hCQ-OW-qkY" kind="push" identifier="pagerSegue" id="H04-Jl-SOp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -375,9 +378,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="Wr0-zu-jke" kind="push" identifier="callSegue" id="RBq-9h-jLc"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -701,9 +701,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="Wr0-zu-jke" kind="push" id="5hC-CC-Rc4"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -773,7 +770,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="5hC-CC-Rc4"/>
-    </inferredMetricsTieBreakers>
 </document>
