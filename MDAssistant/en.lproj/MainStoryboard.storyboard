@@ -262,7 +262,9 @@
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="disabled" image="MD_Assistant_Logo.png"/>
+                                <state key="selected" image="MD_Assistant_Logo.png"/>
+                                <state key="highlighted" image="MD_Assistant_Logo.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -795,7 +797,6 @@
             <relationships>
                 <relationship kind="action" name="openDictation:"/>
                 <relationship kind="action" name="openHandbook:"/>
-                <relationship kind="action" name="pagerButtonPressed:"/>
             </relationships>
         </class>
         <class className="ORController" superclassName="UITableViewController">
@@ -804,7 +805,6 @@
         <class className="PDFViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PDFViewController.h"/>
             <relationships>
-                <relationship kind="action" name="topButtonPressed:"/>
                 <relationship kind="outlet" name="pdfView" candidateClass="UIWebView"/>
             </relationships>
         </class>

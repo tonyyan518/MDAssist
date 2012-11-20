@@ -39,8 +39,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    //return (interfaceOrientation == UIInterfaceOrientationPortrait);
-    return NO;
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 - (IBAction)pagerButtonPressed:(id)sender
