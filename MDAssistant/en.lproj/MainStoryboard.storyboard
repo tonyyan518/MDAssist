@@ -436,7 +436,7 @@
             </objects>
             <point key="canvasLocation" x="1121" y="-1809"/>
         </scene>
-        <!--Call Controller - Call Queue-->
+        <!--Call Controller - Cross Cover-->
         <scene sceneID="Dzd-aw-0ZL">
             <objects>
                 <viewController id="Wr0-zu-jke" customClass="CallController" sceneMemberID="viewController">
@@ -478,7 +478,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Call Queue" id="yky-tD-osj">
+                    <navigationItem key="navigationItem" title="Cross Cover" id="yky-tD-osj">
                         <barButtonItem key="backBarButtonItem" title="Back" id="6rC-4V-kDz"/>
                     </navigationItem>
                     <connections>
@@ -768,71 +768,6 @@
         <image name="settings.png" width="128" height="128"/>
         <image name="system_help.png" width="128" height="128"/>
     </resources>
-    <classes>
-        <class className="CallController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CallController.h"/>
-            <relationships>
-                <relationship kind="action" name="callPhone:"/>
-                <relationship kind="outlet" name="callButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myTable" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ContactsController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactsController.h"/>
-        </class>
-        <class className="CrossCoverController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrossCoverController.h"/>
-        </class>
-        <class className="DTSectionController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DTSectionController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="titleBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="DictationTemplatesController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DictationTemplatesController.h"/>
-        </class>
-        <class className="HomeController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeController.h"/>
-            <relationships>
-                <relationship kind="action" name="openDictation:"/>
-                <relationship kind="action" name="openHandbook:"/>
-            </relationships>
-        </class>
-        <class className="ORController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ORController.h"/>
-        </class>
-        <class className="PDFViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PDFViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="pdfView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="PagerController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerController.h"/>
-        </class>
-        <class className="ScheduleController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scheduleView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SettingsController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsController.h"/>
-            <relationships>
-                <relationship kind="action" name="backgroundTouched:"/>
-                <relationship kind="action" name="loadData:"/>
-                <relationship kind="action" name="saveData:"/>
-                <relationship kind="action" name="textfieldReturn:"/>
-                <relationship kind="outlet" name="cellNumberText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="emailText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="inputScroll" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="nameText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pagerNumberText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="uniqueIDText" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
