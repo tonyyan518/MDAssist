@@ -65,6 +65,7 @@
 		3121765D1654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176421654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf */; };
 		3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3121765E1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf */; };
 		312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176601654426800EC2B7A /* TAH and TAH|BSO.pdf */; };
+		3121766716569AA600EC2B7A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3121766616569AA500EC2B7A /* Default.png */; };
 		3131F0FF1652F9A900177DB9 /* DictationTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */; };
 		3131F1021652FB9800177DB9 /* DTSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F1011652FB9800177DB9 /* DTSectionController.m */; };
 		3131F141165335D200177DB9 /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F140165335D100177DB9 /* ContactsController.m */; };
@@ -225,8 +226,8 @@
 		31058A231607F83900A9AC72 /* MDAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				86D9FF701659BD0D00A02B88 /* Resident Handbook Final3.pdf */,
-				312176621654439400EC2B7A /* Resident Handbook Final2.pdf */,
+				3175560E1659BF0D00147685 /* Resident Handbook Final3.pdf */,
+				3175560B1659B1AA00147685 /* MainStoryboard.storyboard */,
 				314ED6E01630ADE5001A6F01 /* HomeController.h */,
 				314ED6E11630ADE5001A6F01 /* HomeController.m */,
 				314ED6E31630B191001A6F01 /* ORController.h */,
@@ -468,9 +469,9 @@
 				3121765D1654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf in Resources */,
 				3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */,
 				312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */,
-				CE840AFB165444A600E1C240 /* Default.png in Resources */,
-				CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */,
-				86D9FF711659BD0E00A02B88 /* Resident Handbook Final3.pdf in Resources */,
+				3121766716569AA600EC2B7A /* Default.png in Resources */,
+				3175560D1659B1AA00147685 /* MainStoryboard.storyboard in Resources */,
+				3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
