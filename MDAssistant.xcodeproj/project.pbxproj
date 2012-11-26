@@ -65,6 +65,7 @@
 		3121765D1654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176421654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf */; };
 		3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3121765E1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf */; };
 		312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176601654426800EC2B7A /* TAH and TAH|BSO.pdf */; };
+		3121766716569AA600EC2B7A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3121766616569AA500EC2B7A /* Default.png */; };
 		3131F0FF1652F9A900177DB9 /* DictationTemplatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */; };
 		3131F1021652FB9800177DB9 /* DTSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F1011652FB9800177DB9 /* DTSectionController.m */; };
 		3131F141165335D200177DB9 /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131F140165335D100177DB9 /* ContactsController.m */; };
@@ -77,11 +78,8 @@
 		3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3175560E1659BF0D00147685 /* Resident Handbook Final3.pdf */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
-		CE840AFB165444A600E1C240 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131F103165301C900177DB9 /* Default.png */; };
-		CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE840AFD1654453200E1C240 /* Default-568h@2x.png */; };
-		CEB1237A1659B1E500927031 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E31653FDEC00EC2B7A /* book2.png */; };
-		CEB1237C1659B1E900927031 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E11653FDDB00EC2B7A /* mic.png */; };
-		CEB1237D1659B1F300927031 /* Resident Handbook Final2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176621654439400EC2B7A /* Resident Handbook Final2.pdf */; };
+		CED012E71654043B00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CED012E91654043F00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -415,15 +413,14 @@
 				31058AA816175CFA00A9AC72 /* calendar_month.png in Resources */,
 				31058AA916175CFA00A9AC72 /* contact.png in Resources */,
 				31058AAB16175CFA00A9AC72 /* formula.png in Resources */,
-				CEB1237D1659B1F300927031 /* Resident Handbook Final2.pdf in Resources */,
 				31058AAE16175CFA00A9AC72 /* knife.png in Resources */,
 				31058AAF16175CFA00A9AC72 /* MD_Assistant_Logo.png in Resources */,
 				31058AB216175CFA00A9AC72 /* office_calendar.png in Resources */,
 				31058AB416175CFA00A9AC72 /* pager.png in Resources */,
 				31058AB516175CFA00A9AC72 /* pager2.png in Resources */,
 				31058AB616175CFA00A9AC72 /* pager3.png in Resources */,
-				CEB1237A1659B1E500927031 /* book2.png in Resources */,
-				CEB1237C1659B1E900927031 /* mic.png in Resources */,
+				CED012E71654043B00F0B059 /* (null) in Resources */,
+				CED012E91654043F00F0B059 /* (null) in Resources */,
 				31058AB716175CFA00A9AC72 /* phone 2.png in Resources */,
 				31058AB816175CFA00A9AC72 /* phone.png in Resources */,
 				31058AB916175CFA00A9AC72 /* scalpel.png in Resources */,
