@@ -100,7 +100,7 @@
         [self.myTable reloadData];
         if(self.callCounter >= self.callText.count)
         {
-            [self.callButton setTitle:@"DONE" forState:UIControlStateNormal];
+            [self.callButton setTitle:@"Done" forState:UIControlStateNormal];
         }
     }
 }
