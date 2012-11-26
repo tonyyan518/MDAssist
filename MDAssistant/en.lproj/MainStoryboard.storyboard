@@ -262,7 +262,9 @@
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
+                                <state key="disabled" image="MD_Assistant_Logo.png"/>
+                                <state key="selected" image="MD_Assistant_Logo.png"/>
+                                <state key="highlighted" image="MD_Assistant_Logo.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -434,7 +436,7 @@
             </objects>
             <point key="canvasLocation" x="1121" y="-1809"/>
         </scene>
-        <!--Call Controller - Call Queue-->
+        <!--Call Controller - Cross Cover-->
         <scene sceneID="Dzd-aw-0ZL">
             <objects>
                 <viewController id="Wr0-zu-jke" customClass="CallController" sceneMemberID="viewController">
@@ -476,7 +478,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Call Queue" id="yky-tD-osj">
+                    <navigationItem key="navigationItem" title="Cross Cover" id="yky-tD-osj">
                         <barButtonItem key="backBarButtonItem" title="Back" id="6rC-4V-kDz"/>
                     </navigationItem>
                     <connections>

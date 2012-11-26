@@ -32,7 +32,7 @@
         NSString *num = [NSString stringWithFormat:@"919970%@,,*#,151,%@", CCnum, pagerNum];
         [callNums addObject:num];
         NSString *CCtext = [options objectAtIndex: index.row];
-        NSString *text = [NSString stringWithFormat:@"Cross Cover: %@", CCtext];
+        NSString *text = [NSString stringWithFormat:@"%@", CCtext];
         [callTexts addObject:text];
     }
     dest.callNums = callNums;
