@@ -28,7 +28,7 @@
     NSString *uniqueID = [defaults objectForKey:@"savedID"];
     NSString *pagerNum = [defaults objectForKey:@"savedPager"];
     NSString *ORnum = [ORnumbers objectAtIndex:path.row];
-    NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,18,%@#", pagerNum, uniqueID, ORnum];
+    NSString *num = [NSString stringWithFormat:@"%@,,*#,%@#,18,%@#", pagerNum, uniqueID, ORnum];
     NSString *name = [NSString stringWithFormat:@"Signout to: %@",[options objectAtIndex:path.row]];
     NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
     NSMutableArray *callText = [NSMutableArray arrayWithObject:name];
@@ -155,7 +155,7 @@
     NSString *uniqueID = [defaults objectForKey:@"savedID"];
     NSString *pagerNum = [defaults objectForKey:@"savedPager"];
     NSString *ORnum = [ORnumbers objectAtIndex:indexPath.row];
-    NSString *callString = [NSString stringWithFormat:@"telprompt:%@,,*#,%@,18,%@#", pagerNum, uniqueID, ORnum];
+    NSString *callString = [NSString stringWithFormat:@"telprompt:%@,,*#,,%@#,18,%@#", pagerNum, uniqueID, ORnum];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
     NSLog(@"%@", callString);
 }
