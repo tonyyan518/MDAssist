@@ -703,9 +703,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <connections>
-                                    <segue destination="Wr0-zu-jke" kind="push" id="hRd-Gf-GK1"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -840,7 +837,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="hRd-Gf-GK1"/>
-    </inferredMetricsTieBreakers>
 </document>
