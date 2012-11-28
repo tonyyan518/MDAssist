@@ -184,7 +184,7 @@
      */
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *pagerNum = [[defaults objectForKey:@"savedPager"] substringFromIndex:3];
     
     NSString *CCnum = [CCnumbers objectAtIndex:indexPath.row];
     NSString *callNum = [NSString stringWithFormat:@"919970%@,,*#,151,%@", CCnum, pagerNum];
