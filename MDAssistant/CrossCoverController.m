@@ -26,7 +26,7 @@
     NSMutableArray *callNums = [[NSMutableArray alloc] init];
     NSMutableArray *callTexts = [[NSMutableArray alloc] init];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+    NSString *pagerNum = [[defaults objectForKey:@"savedPager"] substringFromIndex:3];
     for(NSIndexPath *index in _selectedIndexPaths) {
         NSString *CCnum = [CCnumbers objectAtIndex:index.row];
         NSString *num = [NSString stringWithFormat:@"919970%@,,*#,151,%@", CCnum, pagerNum];
