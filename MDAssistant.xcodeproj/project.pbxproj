@@ -78,6 +78,7 @@
 		3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3175560E1659BF0D00147685 /* Resident Handbook Final3.pdf */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
+		CE76EF181666DBB100C0190B /* ORLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76EF171666DBB100C0190B /* ORLocationController.m */; };
 		CED012E71654043B00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		CED012E91654043F00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
@@ -171,6 +172,8 @@
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		CE76EF161666DBB100C0190B /* ORLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLocationController.h; sourceTree = "<group>"; };
+		CE76EF171666DBB100C0190B /* ORLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,8 @@
 				314ED6E11630ADE5001A6F01 /* HomeController.m */,
 				314ED6E31630B191001A6F01 /* ORController.h */,
 				314ED6E41630B192001A6F01 /* ORController.m */,
+				CE76EF161666DBB100C0190B /* ORLocationController.h */,
+				CE76EF171666DBB100C0190B /* ORLocationController.m */,
 				314ED6E61630B1AC001A6F01 /* CrossCoverController.h */,
 				314ED6E71630B1AC001A6F01 /* CrossCoverController.m */,
 				314ED6DA1630A2D9001A6F01 /* PagerController.h */,
@@ -484,6 +489,7 @@
 				3131F0FF1652F9A900177DB9 /* DictationTemplatesController.m in Sources */,
 				3131F1021652FB9800177DB9 /* DTSectionController.m in Sources */,
 				3131F141165335D200177DB9 /* ContactsController.m in Sources */,
+				CE76EF181666DBB100C0190B /* ORLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
