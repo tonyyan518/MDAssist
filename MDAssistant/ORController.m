@@ -137,7 +137,7 @@
     NSString *uniqueID = [defaults objectForKey:@"savedID"];
     NSString *pagerNum = [defaults objectForKey:@"savedPager"];
     NSString *ORnum = [_optionNum objectAtIndex:indexPath.row];
-    NSString *callString = [NSString stringWithFormat:@"telprompt:%@,,*,,%@#,18,%@#", pagerNum, uniqueID, ORnum];
+    NSString *callString = [NSString stringWithFormat:@"telprompt:%@,*,%@#,18,%@#", pagerNum, uniqueID, ORnum];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
     NSLog(@"%@", callString);
 }

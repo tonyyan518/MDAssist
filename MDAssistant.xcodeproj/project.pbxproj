@@ -79,8 +79,8 @@
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
 		CE76EF181666DBB100C0190B /* ORLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76EF171666DBB100C0190B /* ORLocationController.m */; };
-		CED012E71654043B00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		CED012E91654043F00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		CE76EF1A1667BD1100C0190B /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E31653FDEC00EC2B7A /* book2.png */; };
+		CE76EF1B1667BD2100C0190B /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E11653FDDB00EC2B7A /* mic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -424,8 +424,8 @@
 				31058AB416175CFA00A9AC72 /* pager.png in Resources */,
 				31058AB516175CFA00A9AC72 /* pager2.png in Resources */,
 				31058AB616175CFA00A9AC72 /* pager3.png in Resources */,
-				CED012E71654043B00F0B059 /* (null) in Resources */,
-				CED012E91654043F00F0B059 /* (null) in Resources */,
+				CE76EF1A1667BD1100C0190B /* book2.png in Resources */,
+				CE76EF1B1667BD2100C0190B /* mic.png in Resources */,
 				31058AB716175CFA00A9AC72 /* phone 2.png in Resources */,
 				31058AB816175CFA00A9AC72 /* phone.png in Resources */,
 				31058AB916175CFA00A9AC72 /* scalpel.png in Resources */,
