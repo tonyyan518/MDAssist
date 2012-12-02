@@ -78,14 +78,9 @@
 		3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3175560E1659BF0D00147685 /* Resident Handbook Final3.pdf */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
-		86D9FF6B1659B43700A02B88 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E31653FDEC00EC2B7A /* book2.png */; };
-		86D9FF6C1659B43B00A02B88 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E11653FDDB00EC2B7A /* mic.png */; };
-		86D9FF6D1659B45500A02B88 /* Resident Handbook Final2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176621654439400EC2B7A /* Resident Handbook Final2.pdf */; };
-		86D9FF711659BD0E00A02B88 /* Resident Handbook Final3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 86D9FF701659BD0D00A02B88 /* Resident Handbook Final3.pdf */; };
-		CE840AFB165444A600E1C240 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131F103165301C900177DB9 /* Default.png */; };
-		CE840AFE1654453200E1C240 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE840AFD1654453200E1C240 /* Default-568h@2x.png */; };
-		CED012E71654043B00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		CED012E91654043F00F0B059 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		86C8825F1666E30A00019736 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E31653FDEC00EC2B7A /* book2.png */; };
+		86C882611666E30C00019736 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E11653FDDB00EC2B7A /* mic.png */; };
+		CE76EF181666DBB100C0190B /* ORLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76EF171666DBB100C0190B /* ORLocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,8 +172,8 @@
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
-		86D9FF701659BD0D00A02B88 /* Resident Handbook Final3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Resident Handbook Final3.pdf"; path = "MD_Assistant_Images/Resident Handbook Final3.pdf"; sourceTree = "<group>"; };
-		CE840AFD1654453200E1C240 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE76EF161666DBB100C0190B /* ORLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLocationController.h; sourceTree = "<group>"; };
+		CE76EF171666DBB100C0190B /* ORLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,11 +424,8 @@
 				31058AB416175CFA00A9AC72 /* pager.png in Resources */,
 				31058AB516175CFA00A9AC72 /* pager2.png in Resources */,
 				31058AB616175CFA00A9AC72 /* pager3.png in Resources */,
-				86D9FF6B1659B43700A02B88 /* book2.png in Resources */,
-				86D9FF6C1659B43B00A02B88 /* mic.png in Resources */,
-				CED012E71654043B00F0B059 /* (null) in Resources */,
-				86D9FF6D1659B45500A02B88 /* Resident Handbook Final2.pdf in Resources */,
-				CED012E91654043F00F0B059 /* (null) in Resources */,
+				86C8825F1666E30A00019736 /* book2.png in Resources */,
+				86C882611666E30C00019736 /* mic.png in Resources */,
 				31058AB716175CFA00A9AC72 /* phone 2.png in Resources */,
 				31058AB816175CFA00A9AC72 /* phone.png in Resources */,
 				31058AB916175CFA00A9AC72 /* scalpel.png in Resources */,
