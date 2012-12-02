@@ -179,25 +179,25 @@
     NSString *cellNum = [defaults objectForKey:@"savedCell"];
     NSString *tableID = [options objectAtIndex:indexPath.row];
     if ([tableID isEqualToString:@"On Page"]) {
-        NSString *num = [NSString stringWithFormat:@"%@,,*,,%@#,12", pagerNum, uniqueID];
+        NSString *num = [NSString stringWithFormat:@"%@,*,%@#,12", pagerNum, uniqueID];
         NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
         NSLog(@"%@", callString);
     }
     else if ([tableID isEqualToString:@"Refer to Cell Phone"]) {
-        NSString *num = [NSString stringWithFormat:@"%@,,*,,%@#,17,%@", pagerNum, uniqueID, cellNum];
+        NSString *num = [NSString stringWithFormat:@"%@,*,%@#,17,%@#", pagerNum, uniqueID, cellNum];
         NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
         NSLog(@"%@", callString);
     }
     else if ([tableID isEqualToString:@"Not On Page"]) {
-        NSString *num = [NSString stringWithFormat:@"%@,,*,,%@#,13", pagerNum, uniqueID];
+        NSString *num = [NSString stringWithFormat:@"%@,*,%@#,13", pagerNum, uniqueID];
         NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
         NSLog(@"%@", callString);
     }
     else if ([tableID isEqualToString:@"Status: Emergency Only"]) {
-        NSString *num = [NSString stringWithFormat:@"%@,,*,,%@#,16", pagerNum, uniqueID];
+        NSString *num = [NSString stringWithFormat:@"%@,*,%@#,16", pagerNum, uniqueID];
         NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
         NSLog(@"%@", callString);
