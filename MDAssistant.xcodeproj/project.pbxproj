@@ -23,7 +23,6 @@
 		31058AA916175CFA00A9AC72 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A8716175CFA00A9AC72 /* contact.png */; };
 		31058AAB16175CFA00A9AC72 /* formula.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A8916175CFA00A9AC72 /* formula.png */; };
 		31058AAE16175CFA00A9AC72 /* knife.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A8C16175CFA00A9AC72 /* knife.png */; };
-		31058AAF16175CFA00A9AC72 /* MD_Assistant_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A8D16175CFA00A9AC72 /* MD_Assistant_Logo.png */; };
 		31058AB216175CFA00A9AC72 /* office_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9016175CFA00A9AC72 /* office_calendar.png */; };
 		31058AB416175CFA00A9AC72 /* pager.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9216175CFA00A9AC72 /* pager.png */; };
 		31058AB516175CFA00A9AC72 /* pager2.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9316175CFA00A9AC72 /* pager2.png */; };
@@ -78,9 +77,11 @@
 		3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3175560E1659BF0D00147685 /* Resident Handbook Final3.pdf */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
-		86C8825F1666E30A00019736 /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E31653FDEC00EC2B7A /* book2.png */; };
-		86C882611666E30C00019736 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E11653FDDB00EC2B7A /* mic.png */; };
+		867CD21E166BBBCA0045C23E /* MDA-OBGYN.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */; };
+		867CD221166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */; };
 		CE76EF181666DBB100C0190B /* ORLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76EF171666DBB100C0190B /* ORLocationController.m */; };
+		CE76EF1A1667BD1100C0190B /* book2.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E31653FDEC00EC2B7A /* book2.png */; };
+		CE76EF1B1667BD2100C0190B /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 312175E11653FDDB00EC2B7A /* mic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,7 +106,6 @@
 		31058A8716175CFA00A9AC72 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
 		31058A8916175CFA00A9AC72 /* formula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = formula.png; sourceTree = "<group>"; };
 		31058A8C16175CFA00A9AC72 /* knife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knife.png; sourceTree = "<group>"; };
-		31058A8D16175CFA00A9AC72 /* MD_Assistant_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MD_Assistant_Logo.png; sourceTree = "<group>"; };
 		31058A9016175CFA00A9AC72 /* office_calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = office_calendar.png; sourceTree = "<group>"; };
 		31058A9216175CFA00A9AC72 /* pager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pager.png; sourceTree = "<group>"; };
 		31058A9316175CFA00A9AC72 /* pager2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pager2.png; sourceTree = "<group>"; };
@@ -172,6 +172,8 @@
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MDA-OBGYN.png"; path = "MD_Assistant_Images/MDA-OBGYN.png"; sourceTree = SOURCE_ROOT; };
+		867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MDA-OBGYN_Small_Icon.png"; sourceTree = "<group>"; };
 		CE76EF161666DBB100C0190B /* ORLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLocationController.h; sourceTree = "<group>"; };
 		CE76EF171666DBB100C0190B /* ORLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,6 +195,7 @@
 		31058A0E1607F83900A9AC72 = {
 			isa = PBXGroup;
 			children = (
+				867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */,
 				3121766616569AA500EC2B7A /* Default.png */,
 				31058A231607F83900A9AC72 /* MDAssistant */,
 				31058A1C1607F83900A9AC72 /* Frameworks */,
@@ -270,6 +273,7 @@
 		31058A7B16175CFA00A9AC72 /* MD_Assistant_Images */ = {
 			isa = PBXGroup;
 			children = (
+				867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */,
 				312175E31653FDEC00EC2B7A /* book2.png */,
 				312175E11653FDDB00EC2B7A /* mic.png */,
 				31A5B70D1622138600B6ECCA /* settings.png */,
@@ -282,7 +286,6 @@
 				31058A8716175CFA00A9AC72 /* contact.png */,
 				31058A8916175CFA00A9AC72 /* formula.png */,
 				31058A8C16175CFA00A9AC72 /* knife.png */,
-				31058A8D16175CFA00A9AC72 /* MD_Assistant_Logo.png */,
 				31058A9016175CFA00A9AC72 /* office_calendar.png */,
 				31058A9216175CFA00A9AC72 /* pager.png */,
 				31058A9316175CFA00A9AC72 /* pager2.png */,
@@ -419,13 +422,12 @@
 				31058AA916175CFA00A9AC72 /* contact.png in Resources */,
 				31058AAB16175CFA00A9AC72 /* formula.png in Resources */,
 				31058AAE16175CFA00A9AC72 /* knife.png in Resources */,
-				31058AAF16175CFA00A9AC72 /* MD_Assistant_Logo.png in Resources */,
 				31058AB216175CFA00A9AC72 /* office_calendar.png in Resources */,
 				31058AB416175CFA00A9AC72 /* pager.png in Resources */,
 				31058AB516175CFA00A9AC72 /* pager2.png in Resources */,
 				31058AB616175CFA00A9AC72 /* pager3.png in Resources */,
-				86C8825F1666E30A00019736 /* book2.png in Resources */,
-				86C882611666E30C00019736 /* mic.png in Resources */,
+				CE76EF1A1667BD1100C0190B /* book2.png in Resources */,
+				CE76EF1B1667BD2100C0190B /* mic.png in Resources */,
 				31058AB716175CFA00A9AC72 /* phone 2.png in Resources */,
 				31058AB816175CFA00A9AC72 /* phone.png in Resources */,
 				31058AB916175CFA00A9AC72 /* scalpel.png in Resources */,
@@ -466,6 +468,8 @@
 				3121766716569AA600EC2B7A /* Default.png in Resources */,
 				3175560D1659B1AA00147685 /* MainStoryboard.storyboard in Resources */,
 				3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */,
+				867CD21E166BBBCA0045C23E /* MDA-OBGYN.png in Resources */,
+				867CD221166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
