@@ -65,9 +65,8 @@
     }
 }
 
-- (IBAction)openHandbook:(id)sender {
-    NSString *fileName = @"Resident Handbook Final3";
-    
+- (IBAction)contactButtonPressed:(id)sender
+{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *securityCode = [defaults objectForKey:@"securityCode"];
     if ([securityCode isEqual:securityKey]) {
