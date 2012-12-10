@@ -21,6 +21,7 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //Prepare the call queue screen based on which locations was selected
     CallController *dest = segue.destinationViewController;
     NSMutableArray *callNums = [[NSMutableArray alloc] init];
     NSMutableArray *callTexts = [[NSMutableArray alloc] init];
@@ -52,6 +53,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //These locations and numbers are hard-coded for this version.
+    //In the future, they should be pulled from a server that the app regularly syncs with.
     options = [NSArray arrayWithObjects:@"GYN-ONCOLOGY", @"BENIGN GYN",  @"OB/GYN CONSULTS",  @"UROGYNECOLOGY", @"OB ANTEPARTUM", @"REI",nil];
     CCnumbers = [NSArray arrayWithObjects:@"7700", @"4962",  @"7066",  @"9976", @"2233", @"9285", nil];
     self.tableView.allowsMultipleSelectionDuringEditing = YES;
@@ -104,6 +107,7 @@
 
 - (void) cellTapped: (UITapGestureRecognizer *) recognizer
 {
+    //toggle between selected and unselected states
     UITableViewCell *cellTapped = (UITableViewCell *) recognizer.view;
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:cellTapped];
     if([self.selectedIndexPaths containsObject:selectedIndexPath])
@@ -122,17 +126,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *pagerNum = [[defaults objectForKey:@"savedPager"] substringFromIndex:3];
-    
-    NSString *CCnum = [CCnumbers objectAtIndex:indexPath.row];
-    NSString *callNum = [NSString stringWithFormat:@"919970%@,,*#,151,%@", CCnum, pagerNum];
-    NSString *CCtext = [options objectAtIndex:indexPath.row];
-    NSString *callText = [NSString stringWithFormat:@"Cross Cover: %@", CCtext];
-    
-    [defaults setObject:callNum forKey:@"callNum"];
-    [defaults setObject:callText forKey:@"callText"];
-    [defaults synchronize];
 }
 
 @end

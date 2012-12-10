@@ -16,39 +16,6 @@
     NSArray *options;
 }
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"callSegue"])
-    {
-        CallController *dest = segue.destinationViewController;
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-        NSString *uniqueID = [defaults objectForKey:@"savedID"];
-        NSString *pagerNum = [defaults objectForKey:@"savedPager"];
-        NSString *cellNum = [defaults objectForKey:@"savedCell"];
-        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-        NSString *tableID = [options objectAtIndex:path.row];
-        if ([tableID isEqualToString:@"Sign Back to On Page"]) {
-            NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,12", pagerNum, uniqueID];
-            NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
-            NSString *text = @"Sign Back to On Page";
-            NSMutableArray *callText = [NSMutableArray arrayWithObject:text];
-            dest.callNums = callNums;
-            dest.callText = callText;
-        }
-        else if ([tableID isEqualToString:@"Refer to Cell Phone"]) {
-            NSString *num = [NSString stringWithFormat:@"%@,,*#,%@,17,%@", pagerNum, uniqueID, cellNum];
-            NSMutableArray *callNums = [NSMutableArray arrayWithObject:num];
-            NSString *text = @"Refer to Cell Phone";
-            NSMutableArray *callText = [NSMutableArray arrayWithObject:text];
-            dest.callNums = callNums;
-            dest.callText = callText;
-        }
-    }
-
-}
-
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -58,6 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //these options are hardcoded for this version
+    //they should come from a remote server in the future
     options = [NSArray arrayWithObjects:@"Cross Cover", @"Sign Out to OR", @"On Page", @"Not On Page", @"Refer to Cell Phone", @"Status: Emergency Only", nil];
 }
 
@@ -112,6 +81,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //these formats are specific to this version of the app
+    //in the future, they should be stored on a server that the app syncs with
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *uniqueID = [defaults objectForKey:@"savedID"];
     NSString *pagerNum = [defaults objectForKey:@"savedPager"];

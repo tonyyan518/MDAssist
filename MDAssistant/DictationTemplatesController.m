@@ -47,6 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //more hard-coded info that should come from a server
     options = [NSArray arrayWithObjects:@"Obstetrics", @"Gynecology", @"UroGynecology", nil];
     obstetrics = [NSArray arrayWithObjects:@"Dilation and Evacuation", @"Post Partum BTL", @"McDonald Cerclage", @"Cesarean Section", nil];
     gynecology = [NSArray arrayWithObjects:@"LEEP", @"Cold Knife Conization", @"Essure", @"Hydrothermal Ablation", @"Hysteroscopy Dilation and Curettage", @"Suction Dilation and Curettage", @"Laparoscopic BTL", @"TAH and TAH|BSO", @"Total Vaginal Hysterectomy", @"Total Laparoscopic Hysterectomy", @"Diagnostic Laparoscopy for Ectopic Pregnancy", @"Abdominal Myomectomy", @"Discharge Summary", @"Partial Vulvectomy", @"Cold Knife Cone and Skinning Vulvectomy", @"Sentinel Node Dissection", @"Robotic Assisted TLH|BSO", @"BETA BOOK CONSULTATON REPORT", nil];

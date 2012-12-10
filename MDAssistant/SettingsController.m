@@ -96,6 +96,7 @@
     NSString *savedPager = self.pagerNumberText.text;
     NSString *savedEmail = self.emailText.text;
     NSString *securityCode = self.securityText.text;
+    //check if the input matches expectations
     if ([savedID length ] != 7) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Unique ID must be 7 digits." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
@@ -108,6 +109,7 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Pager # must be 10 digits." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
+    //store the user's settings
     else {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setObject:savedName forKey:@"savedName"];

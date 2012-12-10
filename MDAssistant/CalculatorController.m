@@ -50,6 +50,8 @@
 
 
 - (IBAction)valueChanged:(id)sender {
+    //as the values of the inputs are changed, change the output image and text accordingly
+    
     NSString *labelText;
     NSString *image;
     if (self.firstValue.text.length > 0 & self.secondValue.text.length > 0) {

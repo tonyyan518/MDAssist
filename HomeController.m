@@ -4,6 +4,8 @@
 //
 //  Created by Tony Yan
 //
+//  This is the Home page of the App
+//
 
 #import "HomeController.h"
 
@@ -31,6 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //set the Security Key for the app here
     securityKey = @"cartersociety";
 }
 
@@ -46,6 +50,7 @@
 
 - (IBAction)pagerButtonPressed:(id)sender
 {
+    //Pager function is only enabled when Settings is correctly filled out
     if ([self checkSecurityCode]) {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         NSString *uniqueID = [defaults objectForKey:@"savedID"];
@@ -100,8 +105,8 @@
     }
 }
 
-- (BOOL) checkSecurityCode
-{
+- (BOOL) checkSecurityCode {
+    //check if the Security Code in Settings matches the Security Key of the app
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *securityCode = [defaults objectForKey:@"securityCode"];
     if ([securityCode isEqual:securityKey]) {

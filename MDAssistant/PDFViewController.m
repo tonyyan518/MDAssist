@@ -16,13 +16,11 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
 - (IBAction)topButtonPressed:(id)sender {
+    //return to the top page by reloading the document
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *loadString = [defaults objectForKey:@"fileName"];
     
@@ -37,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// load the document that is supposed to be displayed
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *loadString = [defaults objectForKey:@"fileName"];
     
@@ -52,7 +50,6 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

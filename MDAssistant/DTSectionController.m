@@ -18,6 +18,7 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //prepare the PDF that is supposed to be displayed
     NSIndexPath *path = [self.tableView indexPathForSelectedRow];
     NSString *fileName = [options objectAtIndex:path.row];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
