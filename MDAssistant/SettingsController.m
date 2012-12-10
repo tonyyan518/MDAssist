@@ -18,6 +18,7 @@
 @synthesize cellNumberText = _cellNumberText;
 @synthesize pagerNumberText = _pagerNumberText;
 @synthesize emailText = _emailText;
+@synthesize securityText = _securityText;
 @synthesize inputScroll = _inputScroll;
 
 - (void)viewDidLoad
@@ -41,11 +42,14 @@
     [self.pagerNumberText setText:loadString];
     loadString = [defaults objectForKey:@"savedEmail"];
     [self.emailText setText:loadString];
+    loadString = [defaults objectForKey:@"securityCode"];
+    [self.securityText setText:loadString];
     [[self nameText] setDelegate:self];
     [[self uniqueIDText] setDelegate:self];
     [[self cellNumberText] setDelegate:self];
     [[self pagerNumberText] setDelegate:self];
     [[self emailText] setDelegate:self];
+    [[self securityText] setDelegate:self];
 }
 
 - (void)viewDidUnload
@@ -55,6 +59,7 @@
     [self setCellNumberText:nil];
     [self setPagerNumberText:nil];
     [self setEmailText:nil];
+    [self setSecurityText:nil];
     [self setInputScroll:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -71,6 +76,7 @@
     [self.cellNumberText resignFirstResponder];
     [self.pagerNumberText resignFirstResponder];
     [self.emailText resignFirstResponder];
+    [self.securityText resignFirstResponder];
 }
 
 - (IBAction)textfieldReturn:(id)sender {
@@ -85,6 +91,7 @@
     NSString *savedCell = self.cellNumberText.text;
     NSString *savedPager = self.pagerNumberText.text;
     NSString *savedEmail = self.emailText.text;
+    NSString *securityCode = self.securityText.text;
     if ([savedID length ] != 7) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Unique ID must be 7 digits" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
@@ -104,16 +111,11 @@
         [defaults setObject:savedCell forKey:@"savedCell"];
         [defaults setObject:savedPager forKey:@"savedPager"];
         [defaults setObject:savedEmail forKey:@"savedEmail"];
+        [defaults setObject:securityCode forKey:@"securityCode"];
         [defaults synchronize];
         
         [self.navigationController popViewControllerAnimated:YES];
     }
-};
-
-- (IBAction)loadData:(id)sender {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *loadString = [defaults objectForKey:@"savedName"];
-    [self.nameText setText:loadString];
 };
 
 - (void) textFieldDidBeginEditing:(UITextField *)textField {
