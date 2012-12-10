@@ -12,6 +12,7 @@
 #define CALL_SEGUE @"callSegue"
 #define DICTATION_SEGUE @"dictationSegue"
 #define HANDBOOK_SEGUE @"handbookSegue"
+#define CALCULATOR_SEGUE @"calculatorSegue"
 
 @interface HomeController ()
 
@@ -30,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    securityKey = @"test";
+    securityKey = @"cartersociety";
 }
 
 - (void)viewDidUnload
@@ -45,82 +46,72 @@
 
 - (IBAction)pagerButtonPressed:(id)sender
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *uniqueID = [defaults objectForKey:@"savedID"];
-    NSString *pagerNum = [defaults objectForKey:@"savedPager"];
-    NSString *cellNum = [defaults objectForKey:@"savedCell"];
-    NSString *securityCode = [defaults objectForKey:@"securityCode"];
-    if ([securityCode isEqual:securityKey]) {
+    if ([self checkSecurityCode]) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *uniqueID = [defaults objectForKey:@"savedID"];
+        NSString *pagerNum = [defaults objectForKey:@"savedPager"];
+        NSString *cellNum = [defaults objectForKey:@"savedCell"];
+        
         if(uniqueID != NULL && pagerNum != NULL && cellNum != NULL) {
             [self performSegueWithIdentifier:PAGER_SEGUE sender:self];
         }
-        else {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Please fill out Settings before using the Pager Assistant." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-            [alert show];
-        }
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Incorrect Security Code. Please check Settings." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
+         else {
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Please fill out Settings before using the Pager Assistant." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+             [alert show];
+         }
     }
 }
 
 - (IBAction)contactButtonPressed:(id)sender
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *securityCode = [defaults objectForKey:@"securityCode"];
-    if ([securityCode isEqual:securityKey]) {
+    if ([self checkSecurityCode]) {
         [self performSegueWithIdentifier:CONTACT_SEGUE sender:self];
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Incorrect Security Code. Please check Settings." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
     }
 }
 
 - (IBAction)dictationButtonPressed:(id)sender
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *securityCode = [defaults objectForKey:@"securityCode"];
-    if ([securityCode isEqual:securityKey]) {
+    if ([self checkSecurityCode]) {
         [self performSegueWithIdentifier:DICTATION_SEGUE sender:self];
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Incorrect Security Code. Please check Settings." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
     }
 }
 
 - (IBAction)handbookButtonPressed:(id)sender
 {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *securityCode = [defaults objectForKey:@"securityCode"];
-    if ([securityCode isEqual:securityKey]) {
+    if ([self checkSecurityCode]) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *fileName = @"Resident Handbook Final3";
+        [defaults setObject:fileName forKey:@"fileName"];
         [self performSegueWithIdentifier:HANDBOOK_SEGUE sender:self];
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Incorrect Security Code. Please check Settings." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
-    }
+    }        
+    
 }
 
 - (IBAction)callButtonPressed:(id)sender
 {
+    if ([self checkSecurityCode]) {
+        [self performSegueWithIdentifier:CALL_SEGUE sender:self];
+    }
+}
+
+- (IBAction)calculatorButtonPress:(id)sender {
+    if ([self checkSecurityCode]) {
+        [self performSegueWithIdentifier:CALCULATOR_SEGUE sender:self];
+    }
+}
+
+- (BOOL) checkSecurityCode
+{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *securityCode = [defaults objectForKey:@"securityCode"];
     if ([securityCode isEqual:securityKey]) {
-        [self performSegueWithIdentifier:CALL_SEGUE sender:self];
+        return YES;
     }
     else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Incorrect Security Code. Please check Settings." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
+        return NO;
     }
-}
-
-- (IBAction)openHandbook:(id)sender {
-    NSString *fileName = @"Resident Handbook Final3";
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:fileName forKey:@"fileName"];
 }
 
 @end

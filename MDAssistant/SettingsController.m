@@ -2,8 +2,7 @@
 //  SecondViewController.m
 //  MDAssistant
 //
-//  Created by guest user on 9/17/12.
-//  Copyright (c) 2012 guest user. All rights reserved.
+//  Created by Tony Yan
 //
 
 #import "SettingsController.h"
@@ -12,7 +11,7 @@
 
 @end
 
-@implementation SettingsController
+@implementation SettingsController 
 @synthesize nameText = _nameText;
 @synthesize uniqueIDText = _uniqueIDText;
 @synthesize cellNumberText = _cellNumberText;
@@ -23,12 +22,9 @@
 
 - (void)viewDidLoad
 {
-    //[super viewDidLoad];
-    
     //enable scrolling
     [self.inputScroll setScrollEnabled:YES];
     [self.inputScroll setContentSize:CGSizeMake(320,1000)];
-    
     
     //load the previous settings
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -50,6 +46,15 @@
     [[self pagerNumberText] setDelegate:self];
     [[self emailText] setDelegate:self];
     [[self securityText] setDelegate:self];
+    
+    //set the key pads for number-only inputs to number pads
+    self.uniqueIDText.keyboardType = UIKeyboardTypeNumberPad;
+    self.cellNumberText.keyboardType = UIKeyboardTypeNumberPad;
+    self.pagerNumberText.keyboardType = UIKeyboardTypeNumberPad;
+    
+    //enable tapping background to dismiss key pad
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundTouched)];
+    [self.inputScroll addGestureRecognizer:gestureRecognizer];
 }
 
 - (void)viewDidUnload
@@ -62,7 +67,6 @@
     [self setSecurityText:nil];
     [self setInputScroll:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -70,7 +74,7 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (IBAction)backgroundTouched:(id)sender {
+- (void)backgroundTouched {
     [self.nameText resignFirstResponder];
     [self.uniqueIDText resignFirstResponder];
     [self.cellNumberText resignFirstResponder];
@@ -93,15 +97,15 @@
     NSString *savedEmail = self.emailText.text;
     NSString *securityCode = self.securityText.text;
     if ([savedID length ] != 7) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Unique ID must be 7 digits" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Unique ID must be 7 digits." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
     else if ([savedCell length ] != 10) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Cell # must be 10 digits with no symbols" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Cell # must be 10 digits." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
     else if ([savedPager length ] != 10) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Pager # must be 10 digits with no symbols" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Pager # must be 10 digits." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
     }
     else {

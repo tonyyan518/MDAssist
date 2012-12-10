@@ -2,8 +2,7 @@
 //  SecondViewController.h
 //  MDAssistant
 //
-//  Created by guest user on 9/17/12.
-//  Copyright (c) 2012 guest user. All rights reserved.
+//  Created by Tony Yan
 //
 
 #import <UIKit/UIKit.h>
@@ -17,9 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *securityText;
 @property (weak, nonatomic) IBOutlet UIScrollView *inputScroll;
 
-- (IBAction)backgroundTouched:(id)sender;
 - (IBAction)textfieldReturn:(id)sender;
 - (IBAction)saveData:(id)sender;
-- (IBAction)loadData:(id)sender;
 
 @end

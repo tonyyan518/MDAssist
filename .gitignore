@@ -68,7 +68,6 @@ build/
 
 xcuserdata
 
-
 ####
 # XCode 4 workspaces - more detailed
 #
@@ -96,6 +95,11 @@ xcuserdata
 #
 !xcshareddata
 
+####
+# XCode 4 build-schemes
+#
+# PRIVATE ones are stored inside xcuserdata
+!xcschemes
 
 ####
 # Xcode 4 - Deprecated classes
@@ -106,8 +110,13 @@ xcuserdata
 
 *.moved-aside
 
-
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are
 #
 # ...none. Everything is now explained.
+
+
+
+
+
+

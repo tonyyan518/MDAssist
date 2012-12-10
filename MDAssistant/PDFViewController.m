@@ -2,8 +2,7 @@
 //  PDFViewController.m
 //  MDAssistant
 //
-//  Created by guest user on 10/7/12.
-//  Copyright (c) 2012 guest user. All rights reserved.
+//  Created by Tony Yan
 //
 
 #import "PDFViewController.h"

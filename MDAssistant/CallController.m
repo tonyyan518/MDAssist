@@ -2,8 +2,7 @@
 //  CallController.m
 //  MDAssistant
 //
-//  Created by guest user on 10/17/12.
-//  Copyright (c) 2012 guest user. All rights reserved.
+//  Created by Tony Yan
 //
 
 #import "CallController.h"
@@ -41,19 +40,15 @@
     [self setMyTable:nil];
     [self setCallButton:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }   
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
     return [_callText count];
 }
 
