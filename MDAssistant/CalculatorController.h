@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *firstValue;
 @property (weak, nonatomic) IBOutlet UITextField *secondValue;
 @property (weak, nonatomic) IBOutlet UILabel *percentChange;
+@property (weak, nonatomic) IBOutlet UIImageView *arrow;
 
 @end

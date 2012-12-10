@@ -77,6 +77,8 @@
 		3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3175560E1659BF0D00147685 /* Resident Handbook Final3.pdf */; };
 		31A5B70E1622138600B6ECCA /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 31A5B70D1622138600B6ECCA /* settings.png */; };
 		31B173DD1676222D00EB3009 /* CalculatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B173DC1676222C00EB3009 /* CalculatorController.m */; };
+		31B173EC1676863300EB3009 /* Arrow-Up-green-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 31B173EB1676863300EB3009 /* Arrow-Up-green-48.png */; };
+		31B173EF1676864800EB3009 /* Arrow-Down-blue-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 31B173EE1676864800EB3009 /* Arrow-Down-blue-48.png */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
 		867CD21E166BBBCA0045C23E /* MDA-OBGYN.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */; };
 		867CD221166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */; };
@@ -173,6 +175,8 @@
 		31A5B70D1622138600B6ECCA /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		31B173DB1676222C00EB3009 /* CalculatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorController.h; sourceTree = "<group>"; };
 		31B173DC1676222C00EB3009 /* CalculatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorController.m; sourceTree = "<group>"; };
+		31B173EB1676863300EB3009 /* Arrow-Up-green-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow-Up-green-48.png"; sourceTree = "<group>"; };
+		31B173EE1676864800EB3009 /* Arrow-Down-blue-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arrow-Down-blue-48.png"; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
 		867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MDA-OBGYN.png"; path = "MD_Assistant_Images/MDA-OBGYN.png"; sourceTree = SOURCE_ROOT; };
@@ -276,6 +280,8 @@
 		31058A7B16175CFA00A9AC72 /* MD_Assistant_Images */ = {
 			isa = PBXGroup;
 			children = (
+				31B173EE1676864800EB3009 /* Arrow-Down-blue-48.png */,
+				31B173EB1676863300EB3009 /* Arrow-Up-green-48.png */,
 				867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */,
 				3121766616569AA500EC2B7A /* Default.png */,
 				867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */,
@@ -475,6 +481,8 @@
 				3175560D1659B1AA00147685 /* MainStoryboard.storyboard in Resources */,
 				3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */,
 				867CD21E166BBBCA0045C23E /* MDA-OBGYN.png in Resources */,
+				31B173EC1676863300EB3009 /* Arrow-Up-green-48.png in Resources */,
+				31B173EF1676864800EB3009 /* Arrow-Down-blue-48.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

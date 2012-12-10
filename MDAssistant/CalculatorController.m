@@ -12,6 +12,7 @@
 @end
 
 @implementation CalculatorController
+@synthesize arrow;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +32,7 @@
 
 - (void)viewDidUnload
 {
+    [self setArrow:nil];
     [super viewDidUnload];
     [self setFirstValue:nil];
     [self setSecondValue:nil];
@@ -48,26 +50,26 @@
 
 
 - (IBAction)valueChanged:(id)sender {
-    
+    NSString *labelText;
+    NSString *image;
     if (self.firstValue.text.length > 0 & self.secondValue.text.length > 0) {
         double first = self.firstValue.text.doubleValue;
         double second = self.secondValue.text.doubleValue;
-        NSString *labelText;
+        
         NSString *percent = @"%";
         if (first > second) {
+            image = @"Arrow-Down-blue-48.png";
             double change = (first - second) / first * 100;
-            labelText = [NSString stringWithFormat:@"Decreased %.1f%@", change, percent];
-            self.percentChange.text = labelText;
+            labelText = [NSString stringWithFormat:@"%.1f%@", change, percent];
         }
         else if (first < second) {
+            image = @"Arrow-Up-Green-48.png";
             double change = (second - first) / first * 100;
-            labelText = [NSString stringWithFormat:@"Increased %.1f%@", change, percent];
-            self.percentChange.text = labelText;
+            labelText = [NSString stringWithFormat:@"%.1f%@", change, percent];
         }
     }
-    else {
-        
-    }
+    [self.arrow setImage:[UIImage imageNamed:image]];
+    self.percentChange.text = labelText;
 }
 
 @end
