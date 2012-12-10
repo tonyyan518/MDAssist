@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *cellNumberText;
 @property (weak, nonatomic) IBOutlet UITextField *pagerNumberText;
 @property (weak, nonatomic) IBOutlet UITextField *emailText;
+@property (weak, nonatomic) IBOutlet UITextField *securityText;
 @property (weak, nonatomic) IBOutlet UIScrollView *inputScroll;
 
 - (IBAction)backgroundTouched:(id)sender;
