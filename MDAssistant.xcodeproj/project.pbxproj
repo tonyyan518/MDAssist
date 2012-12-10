@@ -150,7 +150,7 @@
 		312176421654417600EC2B7A /* Bard Align midurethral mesh sling and cystourethroscopy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Bard Align midurethral mesh sling and cystourethroscopy.pdf"; sourceTree = "<group>"; };
 		3121765E1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Robotic Assisted TLH|BSO.pdf"; sourceTree = "<group>"; };
 		312176601654426800EC2B7A /* TAH and TAH|BSO.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "TAH and TAH|BSO.pdf"; sourceTree = "<group>"; };
-		3121766616569AA500EC2B7A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3121766616569AA500EC2B7A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
 		3131F0FD1652F9A900177DB9 /* DictationTemplatesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictationTemplatesController.h; sourceTree = "<group>"; };
 		3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictationTemplatesController.m; sourceTree = "<group>"; };
 		3131F1001652FB9800177DB9 /* DTSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSectionController.h; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
 		867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MDA-OBGYN.png"; path = "MD_Assistant_Images/MDA-OBGYN.png"; sourceTree = SOURCE_ROOT; };
-		867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MDA-OBGYN_Small_Icon.png"; sourceTree = "<group>"; };
+		867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MDA-OBGYN_Small_Icon.png"; path = "../../MDA-OBGYN_Small_Icon.png"; sourceTree = "<group>"; };
 		CE76EF161666DBB100C0190B /* ORLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLocationController.h; sourceTree = "<group>"; };
 		CE76EF171666DBB100C0190B /* ORLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,8 +195,6 @@
 		31058A0E1607F83900A9AC72 = {
 			isa = PBXGroup;
 			children = (
-				867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */,
-				3121766616569AA500EC2B7A /* Default.png */,
 				31058A231607F83900A9AC72 /* MDAssistant */,
 				31058A1C1607F83900A9AC72 /* Frameworks */,
 				31058A1A1607F83900A9AC72 /* Products */,
@@ -273,6 +271,8 @@
 		31058A7B16175CFA00A9AC72 /* MD_Assistant_Images */ = {
 			isa = PBXGroup;
 			children = (
+				867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */,
+				3121766616569AA500EC2B7A /* Default.png */,
 				867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */,
 				312175E31653FDEC00EC2B7A /* book2.png */,
 				312175E11653FDDB00EC2B7A /* mic.png */,
@@ -466,10 +466,10 @@
 				3121765F1654423900EC2B7A /* Robotic Assisted TLH|BSO.pdf in Resources */,
 				312176611654426800EC2B7A /* TAH and TAH|BSO.pdf in Resources */,
 				3121766716569AA600EC2B7A /* Default.png in Resources */,
+				867CD221166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png in Resources */,
 				3175560D1659B1AA00147685 /* MainStoryboard.storyboard in Resources */,
 				3175560F1659BF0D00147685 /* Resident Handbook Final3.pdf in Resources */,
 				867CD21E166BBBCA0045C23E /* MDA-OBGYN.png in Resources */,
-				867CD221166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
