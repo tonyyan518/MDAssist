@@ -55,7 +55,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QPO-M5-hBA" kind="push" id="fhu-lq-J2P"/>
+                                    <action selector="contactButtonPressed:" destination="2" eventType="touchUpInside" id="i1X-a0-qhU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bSI-gV-fgs">
@@ -70,8 +70,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="handbookButtonPressed:" destination="2" eventType="touchUpInside" id="88J-my-gvO"/>
                                     <action selector="openHandbook:" destination="2" eventType="touchUpInside" id="FEa-mr-lHx"/>
-                                    <segue destination="rbZ-Rb-Vw6" kind="push" id="MnK-TT-kLb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f1N-ch-6Gs">
@@ -86,7 +86,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5yh-4x-CcV" kind="push" id="VA8-tE-rST"/>
+                                    <action selector="callButtonPressed:" destination="2" eventType="touchUpInside" id="zo4-IU-dR4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uMQ-jG-euN">
@@ -101,7 +101,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dBW-Ej-Rhv" kind="push" id="v7M-wL-N4Z"/>
+                                    <action selector="dictationButtonPressed:" destination="2" eventType="touchUpInside" id="q8q-zs-BYI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yz9-dh-nto">
@@ -275,6 +275,10 @@
                     <navigationItem key="navigationItem" title="Home" id="Huh-JI-rL4"/>
                     <connections>
                         <segue destination="hCQ-OW-qkY" kind="push" identifier="pagerSegue" id="H04-Jl-SOp"/>
+                        <segue destination="QPO-M5-hBA" kind="push" identifier="contactSegue" id="dKY-1U-SVR"/>
+                        <segue destination="rbZ-Rb-Vw6" kind="push" identifier="handbookSegue" id="oZv-0z-XoW"/>
+                        <segue destination="5yh-4x-CcV" kind="push" identifier="callSegue" id="HCH-vi-Vm5"/>
+                        <segue destination="dBW-Ej-Rhv" kind="push" identifier="dictationSegue" id="Xg5-c0-VPC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
@@ -490,10 +494,10 @@
             </objects>
             <point key="canvasLocation" x="1814" y="-1809"/>
         </scene>
-        <!--Settings Controller - Second-->
+        <!--Settings Controller - Settings-->
         <scene sceneID="13">
             <objects>
-                <viewController title="Second" id="3" customClass="SettingsController" sceneMemberID="viewController">
+                <viewController title="Settings" id="3" customClass="SettingsController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17" customClass="UIControl">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -823,78 +827,6 @@
         <image name="settings.png" width="128" height="128"/>
         <image name="system_help.png" width="128" height="128"/>
     </resources>
-    <classes>
-        <class className="CallController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CallController.h"/>
-            <relationships>
-                <relationship kind="action" name="callPhone:"/>
-                <relationship kind="outlet" name="callButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myTable" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ContactsController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactsController.h"/>
-        </class>
-        <class className="CrossCoverController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrossCoverController.h"/>
-        </class>
-        <class className="DTSectionController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DTSectionController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="titleBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="DictationTemplatesController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DictationTemplatesController.h"/>
-        </class>
-        <class className="HomeController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeController.h"/>
-            <relationships>
-                <relationship kind="action" name="openDictation:"/>
-                <relationship kind="action" name="openHandbook:"/>
-            </relationships>
-        </class>
-        <class className="ORController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ORController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="titleBar" candidateClass="UINavigationItem"/>
-            </relationships>
-        </class>
-        <class className="ORLocationController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ORLocationController.h"/>
-        </class>
-        <class className="PDFViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PDFViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="pdfView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="PagerController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagerController.h"/>
-        </class>
-        <class className="ScheduleController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ScheduleController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="scheduleView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="SettingsController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsController.h"/>
-            <relationships>
-                <relationship kind="action" name="backgroundTouched:"/>
-                <relationship kind="action" name="loadData:"/>
-                <relationship kind="action" name="saveData:"/>
-                <relationship kind="action" name="textfieldReturn:"/>
-                <relationship kind="outlet" name="cellNumberText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="emailText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="inputScroll" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="nameText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pagerNumberText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="securityText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="uniqueIDText" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
