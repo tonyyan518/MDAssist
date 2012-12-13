@@ -48,6 +48,10 @@
     return (UIInterfaceOrientationIsPortrait(interfaceOrientation));
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 - (IBAction)pagerButtonPressed:(id)sender
 {
     //Pager function is only enabled when Settings is correctly filled out
