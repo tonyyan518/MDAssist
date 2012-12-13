@@ -108,6 +108,11 @@
     return cell;
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
+
 
 #pragma mark - Table view delegate
 
