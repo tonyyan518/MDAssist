@@ -35,7 +35,7 @@
     [super viewDidLoad];
     
     //set the Security Key for the app here
-    securityKey = @"cartersociety";
+    securityKey = @"test";
 }
 
 - (void)viewDidUnload
@@ -45,7 +45,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (UIInterfaceOrientationIsPortrait(interfaceOrientation));
 }
 
 - (IBAction)pagerButtonPressed:(id)sender
