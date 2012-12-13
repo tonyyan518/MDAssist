@@ -85,7 +85,7 @@
 {
     if ([self checkSecurityCode]) {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSString *fileName = @"Resident Handbook Final3";
+        NSString *fileName = @"Resident Handbook v4";
         [defaults setObject:fileName forKey:@"fileName"];
         [self performSegueWithIdentifier:HANDBOOK_SEGUE sender:self];
     }        

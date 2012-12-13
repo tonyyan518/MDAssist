@@ -65,7 +65,7 @@
             labelText = [NSString stringWithFormat:@"%.1f%@", change, percent];
         }
         else if (first < second) {
-            image = @"Arrow-Up-Green-48.png";
+            image = @"Arrow-Up-green-48.png";
             double change = (second - first) / first * 100;
             labelText = [NSString stringWithFormat:@"%.1f%@", change, percent];
         }
