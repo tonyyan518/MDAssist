@@ -35,7 +35,7 @@
     [super viewDidLoad];
     
     //set the Security Key for the app here
-    securityKey = @"test";
+    securityKey = @"cartersociety";
 }
 
 - (void)viewDidUnload
