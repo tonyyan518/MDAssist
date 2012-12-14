@@ -2,7 +2,7 @@
 //  CallController.m
 //  MDAssistant
 //
-//  Created by Tony Yan
+//  Created by Tony Yan, with help from Andrew Patterson
 //
 //  This is the coolest part of the app
 //
@@ -84,9 +84,9 @@
 }
 
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (UIInterfaceOrientationIsPortrait(interfaceOrientation));
+- (NSUInteger)supportedInterfaceOrientations {
+    return (UIInterfaceOrientationMaskPortrait |
+            UIInterfaceOrientationMaskPortraitUpsideDown);
 }
 
 -(IBAction)callPhone:(id)sender {

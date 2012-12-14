@@ -36,6 +36,8 @@
 		31058ABD16175CFA00A9AC72 /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9B16175CFA00A9AC72 /* symbol.png */; };
 		31058ABE16175CFA00A9AC72 /* symbol_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9C16175CFA00A9AC72 /* symbol_check.png */; };
 		31058ABF16175CFA00A9AC72 /* system_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 31058A9D16175CFA00A9AC72 /* system_help.png */; };
+		310FF5A7167AA8E500C68B1C /* MDAssistNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310FF5A6167AA8E500C68B1C /* MDAssistNavigationController.m */; };
+		310FF5AB167AAC4200C68B1C /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310FF5AA167AAC4200C68B1C /* AboutController.m */; };
 		31122EA71624C4BD0052590F /* ScheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31122EA61624C4BD0052590F /* ScheduleController.m */; };
 		312176431654417600EC2B7A /* Abdominal Myomectomy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176261654417600EC2B7A /* Abdominal Myomectomy.pdf */; };
 		312176441654417600EC2B7A /* BETA BOOK CONSULTATON REPORT.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 312176271654417600EC2B7A /* BETA BOOK CONSULTATON REPORT.pdf */; };
@@ -124,6 +126,10 @@
 		31058A9B16175CFA00A9AC72 /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol.png; sourceTree = "<group>"; };
 		31058A9C16175CFA00A9AC72 /* symbol_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol_check.png; sourceTree = "<group>"; };
 		31058A9D16175CFA00A9AC72 /* system_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = system_help.png; sourceTree = "<group>"; };
+		310FF5A5167AA8E500C68B1C /* MDAssistNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDAssistNavigationController.h; sourceTree = "<group>"; };
+		310FF5A6167AA8E500C68B1C /* MDAssistNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDAssistNavigationController.m; sourceTree = "<group>"; };
+		310FF5A9167AAC4200C68B1C /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		310FF5AA167AAC4200C68B1C /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		31122EA51624C4BD0052590F /* ScheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleController.h; sourceTree = "<group>"; };
 		31122EA61624C4BD0052590F /* ScheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleController.m; sourceTree = "<group>"; };
 		312175E11653FDDB00EC2B7A /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic.png; sourceTree = "<group>"; };
@@ -235,6 +241,8 @@
 			children = (
 				31B173F9167A75DC00EB3009 /* Resident Handbook v4.pdf */,
 				3175560B1659B1AA00147685 /* MainStoryboard.storyboard */,
+				310FF5A5167AA8E500C68B1C /* MDAssistNavigationController.h */,
+				310FF5A6167AA8E500C68B1C /* MDAssistNavigationController.m */,
 				314ED6E01630ADE5001A6F01 /* HomeController.h */,
 				314ED6E11630ADE5001A6F01 /* HomeController.m */,
 				314ED6E31630B191001A6F01 /* ORController.h */,
@@ -258,6 +266,8 @@
 				31F564D6162228E300D59659 /* PDFViewController.m */,
 				314ED6D0162F61E2001A6F01 /* CallController.h */,
 				314ED6D1162F61E2001A6F01 /* CallController.m */,
+				310FF5A9167AAC4200C68B1C /* AboutController.h */,
+				310FF5AA167AAC4200C68B1C /* AboutController.m */,
 				3131F0FD1652F9A900177DB9 /* DictationTemplatesController.h */,
 				3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */,
 				3131F1001652FB9800177DB9 /* DTSectionController.h */,
@@ -516,6 +526,8 @@
 				3131F141165335D200177DB9 /* ContactsController.m in Sources */,
 				CE76EF181666DBB100C0190B /* ORLocationController.m in Sources */,
 				31B173DD1676222D00EB3009 /* CalculatorController.m in Sources */,
+				310FF5A7167AA8E500C68B1C /* MDAssistNavigationController.m in Sources */,
+				310FF5AB167AAC4200C68B1C /* AboutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

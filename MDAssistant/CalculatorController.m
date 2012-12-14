@@ -43,9 +43,9 @@
     [self.secondValue resignFirstResponder];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (UIInterfaceOrientationIsPortrait(interfaceOrientation));
+- (NSUInteger)supportedInterfaceOrientations {
+    return (UIInterfaceOrientationMaskPortrait |
+            UIInterfaceOrientationMaskPortraitUpsideDown);
 }
 
 

@@ -43,17 +43,12 @@
     [super viewDidUnload];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (UIInterfaceOrientationIsPortrait(interfaceOrientation));
+- (NSUInteger)supportedInterfaceOrientations {
+    return (UIInterfaceOrientationMaskPortrait |
+            UIInterfaceOrientationMaskPortraitUpsideDown);
 }
 
-- (BOOL)shouldAutorotate {
-    return NO;
-}
-
-- (IBAction)pagerButtonPressed:(id)sender
-{
+- (IBAction)pagerButtonPressed:(id)sender {
     //Pager function is only enabled when Settings is correctly filled out
     if ([self checkSecurityCode]) {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
