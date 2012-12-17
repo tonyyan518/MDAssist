@@ -83,6 +83,14 @@
 		31B173F11676921E00EB3009 /* Info-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 31B173F01676921900EB3009 /* Info-256.png */; };
 		31B173F316769DA600EB3009 /* symbol_information.png in Resources */ = {isa = PBXBuildFile; fileRef = 31B173F216769DA500EB3009 /* symbol_information.png */; };
 		31B173FA167A75DD00EB3009 /* Resident Handbook v4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 31B173F9167A75DC00EB3009 /* Resident Handbook v4.pdf */; };
+		31EE9B0C167D8BD900A50192 /* DukeNorthORs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B0B167D8BD900A50192 /* DukeNorthORs.xml */; };
+		31EE9B10167E54F100A50192 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE9B0F167E54F100A50192 /* XMLParser.m */; };
+		31EE9B13167E91B900A50192 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EE9B12167E91B900A50192 /* Entry.m */; };
+		31EE9B15167E951400A50192 /* CrossCover.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B14167E951300A50192 /* CrossCover.xml */; };
+		31EE9B17167EA9D100A50192 /* DukeLaborORs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B16167EA9D100A50192 /* DukeLaborORs.xml */; };
+		31EE9B1B167EAA8800A50192 /* DurhamRegionalORs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B1A167EAA8800A50192 /* DurhamRegionalORs.xml */; };
+		31EE9B1F167EB05B00A50192 /* Contacts.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B1E167EB05B00A50192 /* Contacts.xml */; };
+		31EE9B26167EB63700A50192 /* ASCORs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B25167EB63700A50192 /* ASCORs.xml */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
 		867CD21E166BBBCA0045C23E /* MDA-OBGYN.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */; };
 		867CD221166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */; };
@@ -187,6 +195,16 @@
 		31B173F01676921900EB3009 /* Info-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-256.png"; sourceTree = "<group>"; };
 		31B173F216769DA500EB3009 /* symbol_information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol_information.png; sourceTree = "<group>"; };
 		31B173F9167A75DC00EB3009 /* Resident Handbook v4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Resident Handbook v4.pdf"; sourceTree = "<group>"; };
+		31EE9B0B167D8BD900A50192 /* DukeNorthORs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DukeNorthORs.xml; sourceTree = "<group>"; };
+		31EE9B0E167E54F000A50192 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		31EE9B0F167E54F100A50192 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		31EE9B11167E91B900A50192 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		31EE9B12167E91B900A50192 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		31EE9B14167E951300A50192 /* CrossCover.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CrossCover.xml; sourceTree = "<group>"; };
+		31EE9B16167EA9D100A50192 /* DukeLaborORs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DukeLaborORs.xml; sourceTree = "<group>"; };
+		31EE9B1A167EAA8800A50192 /* DurhamRegionalORs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DurhamRegionalORs.xml; sourceTree = "<group>"; };
+		31EE9B1E167EB05B00A50192 /* Contacts.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Contacts.xml; sourceTree = "<group>"; };
+		31EE9B25167EB63700A50192 /* ASCORs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ASCORs.xml; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
 		867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MDA-OBGYN.png"; path = "MD_Assistant_Images/MDA-OBGYN.png"; sourceTree = SOURCE_ROOT; };
@@ -239,43 +257,53 @@
 		31058A231607F83900A9AC72 /* MDAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				31B173F9167A75DC00EB3009 /* Resident Handbook v4.pdf */,
+				31EE9B25167EB63700A50192 /* ASCORs.xml */,
+				31EE9B14167E951300A50192 /* CrossCover.xml */,
+				31EE9B0B167D8BD900A50192 /* DukeNorthORs.xml */,
+				31EE9B16167EA9D100A50192 /* DukeLaborORs.xml */,
+				31EE9B1A167EAA8800A50192 /* DurhamRegionalORs.xml */,
+				31EE9B1E167EB05B00A50192 /* Contacts.xml */,
+				31EE9B0E167E54F000A50192 /* XMLParser.h */,
+				31EE9B0F167E54F100A50192 /* XMLParser.m */,
+				31058A2C1607F83900A9AC72 /* AppDelegate.h */,
+				31058A2D1607F83900A9AC72 /* AppDelegate.m */,
 				3175560B1659B1AA00147685 /* MainStoryboard.storyboard */,
 				310FF5A5167AA8E500C68B1C /* MDAssistNavigationController.h */,
 				310FF5A6167AA8E500C68B1C /* MDAssistNavigationController.m */,
 				314ED6E01630ADE5001A6F01 /* HomeController.h */,
 				314ED6E11630ADE5001A6F01 /* HomeController.m */,
-				314ED6E31630B191001A6F01 /* ORController.h */,
-				314ED6E41630B192001A6F01 /* ORController.m */,
-				CE76EF161666DBB100C0190B /* ORLocationController.h */,
-				CE76EF171666DBB100C0190B /* ORLocationController.m */,
-				314ED6E61630B1AC001A6F01 /* CrossCoverController.h */,
-				314ED6E71630B1AC001A6F01 /* CrossCoverController.m */,
 				314ED6DA1630A2D9001A6F01 /* PagerController.h */,
 				314ED6DB1630A2D9001A6F01 /* PagerController.m */,
-				31122EA51624C4BD0052590F /* ScheduleController.h */,
-				31122EA61624C4BD0052590F /* ScheduleController.m */,
-				31058A2C1607F83900A9AC72 /* AppDelegate.h */,
-				31058A2D1607F83900A9AC72 /* AppDelegate.m */,
-				31058A391607F83900A9AC72 /* SettingsController.h */,
-				31058A3A1607F83900A9AC72 /* SettingsController.m */,
-				312176241654417600EC2B7A /* Dictations */,
-				31058A7B16175CFA00A9AC72 /* MD_Assistant_Images */,
-				31058A241607F83900A9AC72 /* Supporting Files */,
-				31F564D5162228E300D59659 /* PDFViewController.h */,
-				31F564D6162228E300D59659 /* PDFViewController.m */,
+				314ED6E61630B1AC001A6F01 /* CrossCoverController.h */,
+				314ED6E71630B1AC001A6F01 /* CrossCoverController.m */,
 				314ED6D0162F61E2001A6F01 /* CallController.h */,
 				314ED6D1162F61E2001A6F01 /* CallController.m */,
-				310FF5A9167AAC4200C68B1C /* AboutController.h */,
-				310FF5AA167AAC4200C68B1C /* AboutController.m */,
+				CE76EF161666DBB100C0190B /* ORLocationController.h */,
+				CE76EF171666DBB100C0190B /* ORLocationController.m */,
+				314ED6E31630B191001A6F01 /* ORController.h */,
+				314ED6E41630B192001A6F01 /* ORController.m */,
+				3131F13F165335CF00177DB9 /* ContactsController.h */,
+				3131F140165335D100177DB9 /* ContactsController.m */,
+				31122EA51624C4BD0052590F /* ScheduleController.h */,
+				31122EA61624C4BD0052590F /* ScheduleController.m */,
 				3131F0FD1652F9A900177DB9 /* DictationTemplatesController.h */,
 				3131F0FE1652F9A900177DB9 /* DictationTemplatesController.m */,
 				3131F1001652FB9800177DB9 /* DTSectionController.h */,
 				3131F1011652FB9800177DB9 /* DTSectionController.m */,
-				3131F13F165335CF00177DB9 /* ContactsController.h */,
-				3131F140165335D100177DB9 /* ContactsController.m */,
+				31F564D5162228E300D59659 /* PDFViewController.h */,
+				31F564D6162228E300D59659 /* PDFViewController.m */,
 				31B173DB1676222C00EB3009 /* CalculatorController.h */,
 				31B173DC1676222C00EB3009 /* CalculatorController.m */,
+				31058A391607F83900A9AC72 /* SettingsController.h */,
+				31058A3A1607F83900A9AC72 /* SettingsController.m */,
+				310FF5A9167AAC4200C68B1C /* AboutController.h */,
+				310FF5AA167AAC4200C68B1C /* AboutController.m */,
+				31B173F9167A75DC00EB3009 /* Resident Handbook v4.pdf */,
+				312176241654417600EC2B7A /* Dictations */,
+				31058A7B16175CFA00A9AC72 /* MD_Assistant_Images */,
+				31058A241607F83900A9AC72 /* Supporting Files */,
+				31EE9B11167E91B900A50192 /* Entry.h */,
+				31EE9B12167E91B900A50192 /* Entry.m */,
 			);
 			path = MDAssistant;
 			sourceTree = "<group>";
@@ -501,6 +529,12 @@
 				31B173F11676921E00EB3009 /* Info-256.png in Resources */,
 				31B173F316769DA600EB3009 /* symbol_information.png in Resources */,
 				31B173FA167A75DD00EB3009 /* Resident Handbook v4.pdf in Resources */,
+				31EE9B0C167D8BD900A50192 /* DukeNorthORs.xml in Resources */,
+				31EE9B15167E951400A50192 /* CrossCover.xml in Resources */,
+				31EE9B17167EA9D100A50192 /* DukeLaborORs.xml in Resources */,
+				31EE9B1B167EAA8800A50192 /* DurhamRegionalORs.xml in Resources */,
+				31EE9B1F167EB05B00A50192 /* Contacts.xml in Resources */,
+				31EE9B26167EB63700A50192 /* ASCORs.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +562,8 @@
 				31B173DD1676222D00EB3009 /* CalculatorController.m in Sources */,
 				310FF5A7167AA8E500C68B1C /* MDAssistNavigationController.m in Sources */,
 				310FF5AB167AAC4200C68B1C /* AboutController.m in Sources */,
+				31EE9B10167E54F100A50192 /* XMLParser.m in Sources */,
+				31EE9B13167E91B900A50192 /* Entry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

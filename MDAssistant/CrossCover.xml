@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entries>
+    <entry>
+        <name>GYN-ONCOLOGY</name>
+        <number>7700</number>
+    </entry>
+    <entry>
+        <name>BENIGN GYN</name>
+        <number>4962</number>
+    </entry>
+    <entry>
+        <name>OB/GYN CONSULTS</name>
+        <number>7066</number>
+    </entry>
+    <entry>
+        <name>UROGYNECOLOGY</name>
+        <number>9976</number>
+    </entry>
+    <entry>
+        <name>OB ANTEPARTUM</name>
+        <number>2233</number>
+    </entry>
+    <entry>
+        <name>REI</name>
+        <number>9285</number>
+    </entry>
+</entries>

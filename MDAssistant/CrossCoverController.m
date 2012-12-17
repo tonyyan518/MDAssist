@@ -7,6 +7,8 @@
 
 #import "CrossCoverController.h"
 #import "CallController.h"
+#import "XMLParser.h"
+#import "Entry.h"
 
 #define CALL_SEGUE @"callSegue"
 
@@ -15,8 +17,8 @@
 @end
 
 @implementation CrossCoverController {
-    NSArray *options;
-    NSArray *CCnumbers;
+    NSMutableArray *options;
+    NSMutableArray *CCnumbers;
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -53,10 +55,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //These locations and numbers are hard-coded for this version.
-    //In the future, they should be pulled from a server that the app regularly syncs with.
-    options = [NSArray arrayWithObjects:@"GYN-ONCOLOGY", @"BENIGN GYN",  @"OB/GYN CONSULTS",  @"UROGYNECOLOGY", @"OB ANTEPARTUM", @"REI",nil];
-    CCnumbers = [NSArray arrayWithObjects:@"7700", @"4962",  @"7066",  @"9976", @"2233", @"9285", nil];
+    
+    //initiate the arrays
+    options = [[NSMutableArray alloc] init];
+    CCnumbers = [[NSMutableArray alloc] init];
+    
+    //parse the locations
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"CrossCover" ofType:@"xml"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    XMLParser *parser = [[XMLParser alloc] initXMLParser];
+    [xmlParser setDelegate:parser];
+    BOOL success = [xmlParser parse];
+    if(success) {
+        NSMutableArray *entries = [parser entries];
+        for (Entry *e in entries) {
+            [options addObject:e.name];
+            [CCnumbers addObject:e.number];
+        }
+    }
+    
     self.tableView.allowsMultipleSelectionDuringEditing = YES;
     [self.tableView setEditing:YES];
     self.selectedIndexPaths = [[NSMutableArray alloc] init];
