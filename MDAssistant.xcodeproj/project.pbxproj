@@ -444,6 +444,11 @@
 			attributes = {
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "guest user";
+				TargetAttributes = {
+					31058A181607F83900A9AC72 = {
+						DevelopmentTeam = HNACG3848H;
+					};
+				};
 			};
 			buildConfigurationList = 31058A131607F83900A9AC72 /* Build configuration list for PBXProject "MDAssistant" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -642,14 +647,14 @@
 		31058A431607F83900A9AC72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Gideon ROSENTHAL (77766H2W8B)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gideon ROSENTHAL (77766H2W8B)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDAssistant/MDAssistant-Prefix.pch";
 				INFOPLIST_FILE = "MDAssistant/MDAssistant-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7D438B99-1A56-4E66-BB84-E3E391D61A50";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7D438B99-1A56-4E66-BB84-E3E391D61A50";
 				WRAPPER_EXTENSION = app;
 			};
@@ -659,10 +664,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDAssistant/MDAssistant-Prefix.pch";
 				INFOPLIST_FILE = "MDAssistant/MDAssistant-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
