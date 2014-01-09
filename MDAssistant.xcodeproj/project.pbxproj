@@ -449,7 +449,7 @@
 				ORGANIZATIONNAME = "guest user";
 				TargetAttributes = {
 					31058A181607F83900A9AC72 = {
-						DevelopmentTeam = HNACG3848H;
+						DevelopmentTeam = 68RN9MQJR3;
 					};
 				};
 			};
@@ -666,15 +666,15 @@
 		31058A431607F83900A9AC72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: TAYLOR TURNER (XSUP2D2AAT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAYLOR TURNER (XSUP2D2AAT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDAssistant/MDAssistant-Prefix.pch";
 				INFOPLIST_FILE = "MDAssistant/MDAssistant-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7D438B99-1A56-4E66-BB84-E3E391D61A50";
+				PROVISIONING_PROFILE = "ED4CE78C-C316-4159-B42B-1D35CB84E3B9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ED4CE78C-C316-4159-B42B-1D35CB84E3B9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -682,14 +682,14 @@
 		31058A441607F83900A9AC72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: TAYLOR TURNER (XSUP2D2AAT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAYLOR TURNER (XSUP2D2AAT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDAssistant/MDAssistant-Prefix.pch";
 				INFOPLIST_FILE = "MDAssistant/MDAssistant-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "ED4CE78C-C316-4159-B42B-1D35CB84E3B9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -94,7 +94,7 @@
         NSLog(@"%@", callString);
     }
     else if ([tableID isEqualToString:@"Refer to Cell Phone"]) {
-        NSString *num = [NSString stringWithFormat:@"%@,*,%@#,17,%@#", pagerNum, uniqueID, cellNum];
+        NSString *num = [NSString stringWithFormat:@"%@,*,%@#,17,%@", pagerNum, uniqueID, cellNum];
         NSString *callString = [NSString stringWithFormat:@"telprompt:%@", num];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:callString]];
         NSLog(@"%@", callString);
