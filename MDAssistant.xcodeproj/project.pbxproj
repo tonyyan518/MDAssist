@@ -92,6 +92,7 @@
 		31EE9B1F167EB05B00A50192 /* Contacts.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B1E167EB05B00A50192 /* Contacts.xml */; };
 		31EE9B26167EB63700A50192 /* ASCORs.xml in Resources */ = {isa = PBXBuildFile; fileRef = 31EE9B25167EB63700A50192 /* ASCORs.xml */; };
 		31F564D7162228E300D59659 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F564D6162228E300D59659 /* PDFViewController.m */; };
+		63A138E9187E320A00C3FCEA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AC92B3187B6964006FCE09 /* Default-568h@2x.png */; };
 		867CD21E166BBBCA0045C23E /* MDA-OBGYN.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */; };
 		867CD221166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */; };
 		CE76EF181666DBB100C0190B /* ORLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76EF171666DBB100C0190B /* ORLocationController.m */; };
@@ -207,6 +208,7 @@
 		31EE9B25167EB63700A50192 /* ASCORs.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ASCORs.xml; sourceTree = "<group>"; };
 		31F564D5162228E300D59659 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		31F564D6162228E300D59659 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		63AC92B3187B6964006FCE09 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		867CD21D166BBBCA0045C23E /* MDA-OBGYN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MDA-OBGYN.png"; path = "MD_Assistant_Images/MDA-OBGYN.png"; sourceTree = SOURCE_ROOT; };
 		867CD220166BBC7B0045C23E /* MDA-OBGYN_Small_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MDA-OBGYN_Small_Icon.png"; path = "../../MDA-OBGYN_Small_Icon.png"; sourceTree = "<group>"; };
 		CE76EF161666DBB100C0190B /* ORLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORLocationController.h; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		31058A0E1607F83900A9AC72 = {
 			isa = PBXGroup;
 			children = (
+				63AC92B3187B6964006FCE09 /* Default-568h@2x.png */,
 				31058A231607F83900A9AC72 /* MDAssistant */,
 				31058A1C1607F83900A9AC72 /* Frameworks */,
 				31058A1A1607F83900A9AC72 /* Products */,
@@ -442,7 +445,7 @@
 		31058A101607F83900A9AC72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "guest user";
 				TargetAttributes = {
 					31058A181607F83900A9AC72 = {
@@ -489,6 +492,7 @@
 				CE76EF1A1667BD1100C0190B /* book2.png in Resources */,
 				CE76EF1B1667BD2100C0190B /* mic.png in Resources */,
 				31058AB716175CFA00A9AC72 /* phone 2.png in Resources */,
+				63A138E9187E320A00C3FCEA /* Default-568h@2x.png in Resources */,
 				31058AB816175CFA00A9AC72 /* phone.png in Resources */,
 				31058AB916175CFA00A9AC72 /* scalpel.png in Resources */,
 				31058ABA16175CFA00A9AC72 /* Screen Shot 2012-09-19 at 2.42.39 PM.png in Resources */,
@@ -599,9 +603,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -614,10 +622,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -626,16 +638,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";

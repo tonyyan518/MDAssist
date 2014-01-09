@@ -63,7 +63,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    options = [NSArray arrayWithObjects:@"Duke North", @"Duke Labor & Delivery", @"Durham Regional", @"ASC", nil];
+    options = [NSMutableArray arrayWithObjects:@"Duke North", @"Duke Labor & Delivery", @"Durham Regional", @"ASC", nil];
     
     //initialize the arrays
     dukeNorth = [[NSMutableArray alloc] init];
