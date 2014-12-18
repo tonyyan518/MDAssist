@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="8bG-W3-u5u">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Contacts Controller - Contacts-->
+        <!--Contacts-->
         <scene sceneID="hnW-Ig-pen">
             <objects>
                 <tableViewController id="QPO-M5-hBA" customClass="ContactsController" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
             </objects>
             <point key="canvasLocation" x="467" y="-2392"/>
         </scene>
-        <!--Home Controller - First-->
+        <!--First-->
         <scene sceneID="11">
             <objects>
                 <viewController title="First" id="2" customClass="HomeController" sceneMemberID="viewController">
@@ -281,7 +281,7 @@
             </objects>
             <point key="canvasLocation" x="-138" y="-546"/>
         </scene>
-        <!--Schedule Controller - Call Schedule-->
+        <!--Call Schedule-->
         <scene sceneID="thH-Pd-M0T">
             <objects>
                 <viewController id="5yh-4x-CcV" customClass="ScheduleController" sceneMemberID="viewController">
@@ -308,7 +308,7 @@
             </objects>
             <point key="canvasLocation" x="1054" y="942"/>
         </scene>
-        <!--View Controller - Resident Handbook-->
+        <!--Resident Handbook-->
         <scene sceneID="tRQ-FX-Kj0">
             <objects>
                 <viewController id="rbZ-Rb-Vw6" customClass="PDFViewController" sceneMemberID="viewController">
@@ -317,7 +317,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="VWo-XE-juJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="65" width="328" height="422"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -340,7 +340,7 @@
             </objects>
             <point key="canvasLocation" x="1064" y="235"/>
         </scene>
-        <!--Pager Controller - Paging-->
+        <!--Paging-->
         <scene sceneID="CH8-lg-NHI">
             <objects>
                 <tableViewController id="hCQ-OW-qkY" customClass="PagerController" sceneMemberID="viewController">
@@ -393,7 +393,7 @@
             </objects>
             <point key="canvasLocation" x="446" y="-1439"/>
         </scene>
-        <!--Cross Cover Controller - Cross Cover-->
+        <!--Cross Cover-->
         <scene sceneID="R2u-9o-Kg5">
             <objects>
                 <tableViewController id="SkV-wL-Xcd" customClass="CrossCoverController" sceneMemberID="viewController">
@@ -432,7 +432,7 @@
             </objects>
             <point key="canvasLocation" x="1121" y="-1809"/>
         </scene>
-        <!--Call Controller - Cross Cover-->
+        <!--Cross Cover-->
         <scene sceneID="Dzd-aw-0ZL">
             <objects>
                 <viewController id="Wr0-zu-jke" customClass="CallController" sceneMemberID="viewController">
@@ -478,7 +478,7 @@
             </objects>
             <point key="canvasLocation" x="1814" y="-1809"/>
         </scene>
-        <!--About Controller - About-->
+        <!--About-->
         <scene sceneID="vPq-iE-Let">
             <objects>
                 <viewController id="xcY-zP-oyz" customClass="AboutController" sceneMemberID="viewController">
@@ -486,7 +486,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MD Assistant v0.8.6.6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="IGE-tp-2UI">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MD Assistant v1.0.0.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="IGE-tp-2UI">
                                 <rect key="frame" x="20" y="73" width="280" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -508,10 +508,10 @@ Dr. Jason Yeh
 
 Special Thanks To:
 Duke Unversity Computer Science
-OB/GYN at Duke Medical School
+Duke OB/GYN
 Diane Hoffmeister
 Andrew Patterson
-Google &amp; Stack Overflow</string>
+Stack Overflow Community</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -524,7 +524,7 @@ Google &amp; Stack Overflow</string>
             </objects>
             <point key="canvasLocation" x="-594" y="116"/>
         </scene>
-        <!--Calculator Controller - b-HCG Calculator-->
+        <!--b-HCG Calculator-->
         <scene sceneID="1mL-xd-zdg">
             <objects>
                 <viewController id="5YP-N0-2G9" customClass="CalculatorController" sceneMemberID="viewController">
@@ -587,7 +587,7 @@ Google &amp; Stack Overflow</string>
             </objects>
             <point key="canvasLocation" x="-123" y="116"/>
         </scene>
-        <!--Settings Controller - Settings-->
+        <!--Settings-->
         <scene sceneID="13">
             <objects>
                 <viewController title="Settings" id="3" customClass="SettingsController" sceneMemberID="viewController">
@@ -732,7 +732,7 @@ Google &amp; Stack Overflow</string>
             </objects>
             <point key="canvasLocation" x="-630" y="-546"/>
         </scene>
-        <!--Dictation Templates Controller - Dictation-->
+        <!--Dictation-->
         <scene sceneID="aBo-kw-BK2">
             <objects>
                 <tableViewController id="dBW-Ej-Rhv" customClass="DictationTemplatesController" sceneMemberID="viewController">
@@ -764,7 +764,7 @@ Google &amp; Stack Overflow</string>
             </objects>
             <point key="canvasLocation" x="761" y="-528"/>
         </scene>
-        <!--View Controller - Template-->
+        <!--Template-->
         <scene sceneID="HJY-IO-P2P">
             <objects>
                 <viewController id="sdX-fw-1fp" customClass="PDFViewController" sceneMemberID="viewController">
@@ -773,7 +773,7 @@ Google &amp; Stack Overflow</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" id="9qo-qp-uap">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -791,7 +791,7 @@ Google &amp; Stack Overflow</string>
             </objects>
             <point key="canvasLocation" x="1752" y="-528"/>
         </scene>
-        <!--Controller - OR-->
+        <!--OR-->
         <scene sceneID="1w5-Ta-qK9">
             <objects>
                 <tableViewController id="zTN-gO-REg" customClass="ORController" sceneMemberID="viewController">
@@ -825,7 +825,7 @@ Google &amp; Stack Overflow</string>
             </objects>
             <point key="canvasLocation" x="1814" y="-1143"/>
         </scene>
-        <!--Section Controller - Section-->
+        <!--Section-->
         <scene sceneID="Dng-Xh-hfH">
             <objects>
                 <tableViewController id="soK-D4-YC4" customClass="DTSectionController" sceneMemberID="viewController">
@@ -860,7 +860,7 @@ Google &amp; Stack Overflow</string>
             </objects>
             <point key="canvasLocation" x="1282" y="-528"/>
         </scene>
-        <!--Location Controller - OR Location-->
+        <!--OR Location-->
         <scene sceneID="0e5-Ji-CPX">
             <objects>
                 <tableViewController id="6RC-d1-EyM" customClass="ORLocationController" sceneMemberID="viewController">
